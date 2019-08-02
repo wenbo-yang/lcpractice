@@ -1,0 +1,146 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CommonUtilities
+{
+    public abstract class Heap
+    {
+        internal readonly List<int> _heap = new List<int>();
+        
+        public int Peek()
+        {
+            return _heap[0];
+        }
+
+        public void Add(int value)
+        {
+            _heap.Add(value);
+            HeapUp();
+        }
+
+        public int Pop()
+        {
+            var retVal = _heap[0];
+
+            Swap(0, Count - 1);
+            _heap.RemoveAt(Count - 1);
+
+            if (Count > 0)
+            {
+                HeapDown();
+            }
+
+            return retVal;
+        }
+        public int Count => _heap.Count;
+        internal abstract void HeapUp();
+        internal abstract void HeapDown();
+
+        internal void Swap(int i, int j)
+        {
+            var temp = _heap[i];
+            _heap[i] = _heap[j];
+            _heap[j] = temp;
+        }
+    }
+
+    public class MinHeap : Heap
+    {
+        internal override void HeapUp()
+        {
+            var current = Count - 1;
+
+            while (current != 0)
+            {
+                var parent = current % 2 == 0 ? current / 2 - 1 : current / 2;
+                if (_heap[current] >= _heap[parent])
+                {
+                    break;
+                }
+
+                Swap(current, parent);
+                current = parent;
+            }
+        }
+
+        internal override void HeapDown()
+        {
+            var current = 0;
+
+            while (current < Count)
+            {
+                var left = current * 2 + 1;
+                var right = current * 2 + 2;
+                var index = current;
+                if (left < Count && right < Count)
+                {
+                    index = _heap[left] < _heap[right] ? left : right;
+                }
+                else if (right >= Count)
+                {
+                    index = left;
+                }
+
+                if (index >= Count || _heap[index] > _heap[current])
+                {
+                    break;
+                }
+
+                Swap(current, index);
+                current = index;
+            }
+        }
+    }
+
+    public class MaxHeap : Heap
+    {
+        internal override void HeapUp()
+        {
+            var current = Count - 1;
+
+            while (current != 0)
+            {
+                var parent = current % 2 == 0 ? current / 2 - 1 : current / 2;
+                if (_heap[current] <= _heap[parent])
+                {
+                    break;
+                }
+
+                Swap(current, parent);
+                current = parent;
+            }
+        }
+
+        internal override void HeapDown()
+        {
+            var current = 0;
+
+            while (current < Count)
+            {
+                var left = current * 2 + 1;
+                var right = current * 2 + 2;
+                var index = current;
+                if (left < Count && right < Count)
+                {
+                    index = _heap[left] > _heap[right] ? left : right;
+                }
+                else if (right >= Count)
+                {
+                    index = left;
+                }
+
+                if (index >= Count || _heap[index] < _heap[current])
+                {
+                    break;
+                }
+
+                Swap(current, index);
+                current = index;
+            }
+        }
+
+    }
+}
