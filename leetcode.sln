@@ -193,6 +193,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC268_MissingNumber", "LC268_MissingNumber\LC268_MissingNumber.csproj", "{08A54CDB-9DA6-4430-8729-187BA496A84D}"
 >>>>>>> another set
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC303_RangeSumQuery", "LC303_RangeSumQuery\LC303_RangeSumQuery.csproj", "{515D07C2-2A2F-48DD-A41C-937AEEB75CCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -577,7 +579,14 @@ Global
 		{08A54CDB-9DA6-4430-8729-187BA496A84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08A54CDB-9DA6-4430-8729-187BA496A84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08A54CDB-9DA6-4430-8729-187BA496A84D}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 >>>>>>> another set
+=======
+		{515D07C2-2A2F-48DD-A41C-937AEEB75CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515D07C2-2A2F-48DD-A41C-937AEEB75CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515D07C2-2A2F-48DD-A41C-937AEEB75CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515D07C2-2A2F-48DD-A41C-937AEEB75CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> another one
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
