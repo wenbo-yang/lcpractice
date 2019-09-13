@@ -8,6 +8,7 @@ namespace LC121_BestTimeToBuyAndSellStock
     {
         // transfrom this into max sum subarray
         // 122, 123 are also here
+        // 309 best time with cooldown is also here
         [TestMethod]
         public void GivenStockPrice_MaxProfit_ShouldGrenerateMaxProfit()
         {
@@ -38,6 +39,11 @@ namespace LC121_BestTimeToBuyAndSellStock
             Assert.IsTrue(maxProfit == 7);
         }
 
+        private int MaxProfitWithCoolDown(int[] input)
+        {
+            throw new NotImplementedException();
+        }
+
         private int MaxProfitMultipleTrades(int[] input)
         {
 
@@ -57,8 +63,6 @@ namespace LC121_BestTimeToBuyAndSellStock
 
             return currentSum;
         }
-
-        
 
         private int MaxProfit(int[] input)
         {
@@ -142,9 +146,5 @@ namespace LC121_BestTimeToBuyAndSellStock
 
             return currentMax;
         }
-
-
-
-
     }
 }
