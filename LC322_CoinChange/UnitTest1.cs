@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC322_CoinChange
 {
     [TestClass]
-    // greedy
+    // knap sack or dfs not greedy
     public class CoinChangeTests
     {
         [TestMethod]
@@ -33,26 +33,64 @@ namespace LC322_CoinChange
         {
             Array.Sort(input);
 
-            var result = 0;
-            var currentIndex = input.Length - 1;
-            var remainder = 0;
-            var tempTarget = target;
+            var row = input.Length;
+            var col = target + 1;
+            var dp = GenerateDP(row, col);
+            var currentNonZeroMin = new int[col];
+            InitializeDP(input, dp, currentNonZeroMin);
 
-            do
+            for (int i = 1; i < row; i++)
             {
-                if (currentIndex == -1)
+                for (int j = 1; j < col; j++)
                 {
-                    return -1;
+                    if (j == input[i])
+                    {
+                        dp[i][j] = 1;
+                    }
+
+                    if (j > input[i])
+                    {
+                        var diff = j - input[i];
+                        var temp1 = currentNonZeroMin[diff] == 0 ? 0 : currentNonZeroMin[diff] + 1;
+                        var temp2 = dp[i][diff] == 0 ? 0 : dp[i][diff] + 1;
+
+                        dp[i][j] = temp2 == 0 ? temp1 : temp2;
+
+                        
+                    }
+
+                    if (dp[i][j] != 0)
+                    {
+                        currentNonZeroMin[j] = dp[i][j];
+                    }
                 }
-
-                result += tempTarget / input[currentIndex];
-                remainder = tempTarget % input[currentIndex];
-                tempTarget = remainder;
-                currentIndex--;
             }
-            while (remainder != 0);
 
-            return result;
+            return currentNonZeroMin[col - 1] == 0 ? -1 : currentNonZeroMin[col - 1];
+        }
+
+        private void InitializeDP(int[] input, int[][] dp, int[] currentNonZeroMin)
+        {
+            for (int i = 0; i < dp[0].Length; i++)
+            {
+                if (i % input[0] == 0)
+                {
+                    dp[0][i] = i / input[0];
+                    currentNonZeroMin[i] = dp[0][i];
+                }
+            }
+        }
+
+        private int[][] GenerateDP(int row, int col)
+        {
+            var dp = new int[row][];
+
+            for(int i = 0; i < dp.Length; i++)
+            {
+                dp[i] = new int[col];
+            }
+
+            return dp;
         }
     }
 }

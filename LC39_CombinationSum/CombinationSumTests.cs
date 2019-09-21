@@ -9,7 +9,7 @@ namespace LC39_CombinationSum
     {
         // dfs
         [TestMethod]
-        public void GivenArray_Dfs_Should_ReturnListOfResults()
+        public void GivenArray_Dfs_ShouldReturnListOfResults()
         {
             var inputArray = new List<int> { 2, 3, 6, 7 };
             var targetSum = 7;
