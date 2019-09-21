@@ -195,6 +195,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC303_RangeSumQuery", "LC30
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC314_BinaryTreeVericalOrderTraversal", "LC314_BinaryTreeVericalOrderTraversal\LC314_BinaryTreeVericalOrderTraversal.csproj", "{88F60402-6C89-42DF-8562-1D336F5B8CAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC300_LongestIncreasingSubsequence", "LC300_LongestIncreasingSubsequence\LC300_LongestIncreasingSubsequence.csproj", "{F4443969-8E3A-4690-BF19-8E776B0CBCCD}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC322_CoinChange", "LC322_CoinChange\LC322_CoinChange.csproj", "{BF2D6DD1-EC3A-4B22-AF67-BB062A94C898}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC326_PowerOf3", "LC326_PowerOf3\LC326_PowerOf3.csproj", "{0D9CAB09-360B-42DA-B2AB-9137C3FB1745}"
@@ -615,6 +617,10 @@ Global
 		{BB89A05C-6F6D-48A9-8668-3F1E146F136E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB89A05C-6F6D-48A9-8668-3F1E146F136E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB89A05C-6F6D-48A9-8668-3F1E146F136E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4443969-8E3A-4690-BF19-8E776B0CBCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4443969-8E3A-4690-BF19-8E776B0CBCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4443969-8E3A-4690-BF19-8E776B0CBCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4443969-8E3A-4690-BF19-8E776B0CBCCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
