@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LC326_PowerOf3
 {
+    // lc326, lc342
     [TestClass]
     public class UnitTest1
     {
@@ -20,6 +21,14 @@ namespace LC326_PowerOf3
             var result = new PowerOf(3).Build().IsNumberPowerOf(15);
 
             Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void GivenPowerOf4_IsPowerOf_ShouldReturnTrue()
+        {
+            var result = new PowerOf(4).Build().IsNumberPowerOf(16);
+
+            Assert.IsTrue(result);
         }
 
         public class PowerOf
