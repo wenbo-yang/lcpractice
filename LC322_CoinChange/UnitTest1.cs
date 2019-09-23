@@ -45,23 +45,14 @@ namespace LC322_CoinChange
                 {
                     if (j == input[i])
                     {
-                        dp[i][j] = 1;
+                        currentNonZeroMin[j] = 1;
                     }
 
                     if (j > input[i])
                     {
                         var diff = j - input[i];
-                        var temp1 = currentNonZeroMin[diff] == 0 ? 0 : currentNonZeroMin[diff] + 1;
-                        var temp2 = dp[i][diff] == 0 ? 0 : dp[i][diff] + 1;
+                        currentNonZeroMin[j] = currentNonZeroMin[diff] == 0 ? 0 : currentNonZeroMin[diff] + 1;
 
-                        dp[i][j] = temp2 == 0 ? temp1 : temp2;
-
-                        
-                    }
-
-                    if (dp[i][j] != 0)
-                    {
-                        currentNonZeroMin[j] = dp[i][j];
                     }
                 }
             }
