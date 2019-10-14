@@ -12,7 +12,7 @@ namespace LC215_KthLargestInArray
         [TestMethod]
         public void GivenArray_Add_ShouldConstructMinHeap()
         {
-            var minHeap = new MinHeap();
+            var minHeap = new MinHeap<int>();
             var array = new int[] { 2, 3, 3, 1, -1, -2 };
 
             foreach (var item in array)
@@ -28,7 +28,7 @@ namespace LC215_KthLargestInArray
         [TestMethod]
         public void GivenMinHeap_Pop_ReturnInSortedOrder()
         {
-            var minHeap = new MinHeap();
+            var minHeap = new MinHeap<int>();
             var array = new int[] { 2, 3, 3, 1, -1, - 2};
 
             foreach (var item in array)
@@ -50,7 +50,7 @@ namespace LC215_KthLargestInArray
         [TestMethod]
         public void GivenArray_Add_ShouldConstructMaxHeap()
         {
-            var maxHeap = new MaxHeap();
+            var maxHeap = new MaxHeap<int>();
             var array = new int[] { 2, 3, 3, 1, -1 };
 
             foreach (var item in array)
@@ -66,7 +66,7 @@ namespace LC215_KthLargestInArray
         [TestMethod]
         public void GivenMaxHeap_Pop_ReturnInSortedOrder()
         {
-            var maxHeap = new MaxHeap();
+            var maxHeap = new MaxHeap<int>();
             var array = new int[] { 2, 3, 3, 1, -1 };
 
             foreach (var item in array)
@@ -98,7 +98,7 @@ namespace LC215_KthLargestInArray
         private int FindKthLargest(int[] array, int k)
         {
             // param validation
-            var minHeap = new MinHeap();
+            var minHeap = new MinHeap<int>();
 
             foreach (var item in array)
             {
