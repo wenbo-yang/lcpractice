@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace CommonUtilities
 {
-    public abstract class Heap
+    public abstract class Heap<T>
     {
-        internal readonly List<int> _heap = new List<int>();
+        internal readonly List<T> _heap = new List<T>();
         
-        public int Peek()
+        public T Peek()
         {
             return _heap[0];
         }
 
-        public void Add(int value)
+        public void Add(T value)
         {
             _heap.Add(value);
             HeapUp();
         }
 
-        public int Pop()
+        public T Pop()
         {
             var retVal = _heap[0];
 
@@ -47,7 +47,7 @@ namespace CommonUtilities
         }
     }
 
-    public class MinHeap : Heap
+    public class MinHeap<T> : Heap<T>
     {
         internal override void HeapUp()
         {
@@ -56,7 +56,8 @@ namespace CommonUtilities
             while (current != 0)
             {
                 var parent = current % 2 == 0 ? current / 2 - 1 : current / 2;
-                if (_heap[current] >= _heap[parent])
+                
+                if (Comparer<T>.Default.Compare(_heap[current], _heap[parent]) >=0 )
                 {
                     break;
                 }
@@ -77,14 +78,15 @@ namespace CommonUtilities
                 var index = current;
                 if (left < Count && right < Count)
                 {
-                    index = _heap[left] < _heap[right] ? left : right;
+                    
+                    index = Comparer<T>.Default.Compare(_heap[left], _heap[right]) < 0 ? left : right;
                 }
                 else if (right >= Count)
                 {
                     index = left;
                 }
 
-                if (index >= Count || _heap[index] > _heap[current])
+                if (index >= Count || Comparer<T>.Default.Compare(_heap[index], _heap[current]) > 0)
                 {
                     break;
                 }
@@ -95,7 +97,7 @@ namespace CommonUtilities
         }
     }
 
-    public class MaxHeap : Heap
+    public class MaxHeap<T> : Heap<T>
     {
         internal override void HeapUp()
         {
@@ -104,7 +106,7 @@ namespace CommonUtilities
             while (current != 0)
             {
                 var parent = current % 2 == 0 ? current / 2 - 1 : current / 2;
-                if (_heap[current] <= _heap[parent])
+                if (Comparer<T>.Default.Compare(_heap[current], _heap[parent]) <= 0)
                 {
                     break;
                 }
@@ -125,14 +127,14 @@ namespace CommonUtilities
                 var index = current;
                 if (left < Count && right < Count)
                 {
-                    index = _heap[left] > _heap[right] ? left : right;
+                    index = Comparer<T>.Default.Compare(_heap[left], _heap[right]) > 0 ? left : right;
                 }
                 else if (right >= Count)
                 {
                     index = left;
                 }
 
-                if (index >= Count || _heap[index] < _heap[current])
+                if (index >= Count || Comparer<T>.Default.Compare(_heap[index], _heap[current]) < 0)
                 {
                     break;
                 }

@@ -32,7 +32,7 @@ namespace LC348_TopKElement
 
         private int[] TopKFrequentElement(int[] input, int topK)
         {
-            var heap = new MinHeap();
+            var heap = new MinHeap<int>();
 
             var table = new Dictionary<int, int>();
 
