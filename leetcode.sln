@@ -219,6 +219,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC509_NthFibonacci", "LC509
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC380_GetRandom", "LC380_GetRandom\LC380_GetRandom.csproj", "{5651C467-5E88-4CBA-BB9C-9EB94F25634C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC361_BombGuy", "LC361_BombGuy\LC361_BombGuy.csproj", "{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -657,6 +659,10 @@ Global
 		{5651C467-5E88-4CBA-BB9C-9EB94F25634C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5651C467-5E88-4CBA-BB9C-9EB94F25634C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5651C467-5E88-4CBA-BB9C-9EB94F25634C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
