@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5651C467-5E88-4CBA-BB9C-9EB94F25634C}</ProjectGuid>
+    <ProjectGuid>{E0F305EF-94B1-4638-A4C8-8634089DD053}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC380_GetRandom</RootNamespace>
-    <AssemblyName>LC380_GetRandom</AssemblyName>
+    <RootNamespace>LC373_FindKPairsOfSmallestSums</RootNamespace>
+    <AssemblyName>LC373_FindKPairsOfSmallestSums</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetRandom.cs" />
+    <Compile Include="FindKPairsOfSmallestSumsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
