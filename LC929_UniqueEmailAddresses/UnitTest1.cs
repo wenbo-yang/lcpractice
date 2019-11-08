@@ -22,42 +22,14 @@ namespace LC929_UniqueEmailAddresses
 
             var hashSet = new HashSet<string>();
             foreach (var address in input)
-            {
-                var list = new List<char>();
-                var index = 0;
-                while (index < address.Length)
-                {
-                    if (address[index] == '+')
-                    {
-                        index = address.IndexOf('@', index);
-                        if (index == -1)
-                        {
-                            break;
-                        }
+            {   
+                var split = address.Split('@');
+                var local = split[0];
+                var global = split[1];
+                var processedLocal = split[0].Split('+')[0];
+                var finalLocal = processedLocal.Replace(".", "");
 
-                        continue;
-                    }
-
-                    if (address[index] == '.')
-                    {
-                        index++;
-                        continue;
-                    }
-
-                    if (address[index] == '@')
-                    {
-                        list.AddRange(address.Substring(index, address.Length - index));
-                        break;
-                    }
-
-                    list.Add(address[index]);
-                    index++;
-                }
-
-                if (list.Count != 0)
-                {
-                    hashSet.Add(new string(list.ToArray()));
-                }
+                hashSet.Add(finalLocal + "@" + global); 
             }
 
             return hashSet.Count;
