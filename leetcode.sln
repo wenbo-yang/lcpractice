@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2_AddTwoNumbers", "lc2_addtwonumbers\LC2_AddTwoNumbers.csproj", "{20D698FF-14D8-48EE-8099-56119D99D693}"
 EndProject
@@ -256,6 +256,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC311_SparseVectorMultiplication", "LC311_SparseVectorMultiplication\LC311_SparseVectorMultiplication.csproj", "{73BB0840-F496-483B-BBCA-09D425196FD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC987_VerticalOrderTraversal", "LC987_VerticalOrderTraversal\LC987_VerticalOrderTraversal.csproj", "{C3CC5E9D-D536-4BD5-80BE-99746544FCB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC760_FindAnagramMappings", "LC760_FindAnagramMappings\LC760_FindAnagramMappings.csproj", "{0E736ED7-2AE4-4923-B435-BCF73382CF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC463_FindPerimeter", "LC463_FindPerimeter\LC463_FindPerimeter.csproj", "{7885A37A-D1BF-45E8-8D97-5D89626F22E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -771,6 +775,14 @@ Global
 		{C3CC5E9D-D536-4BD5-80BE-99746544FCB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3CC5E9D-D536-4BD5-80BE-99746544FCB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3CC5E9D-D536-4BD5-80BE-99746544FCB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E736ED7-2AE4-4923-B435-BCF73382CF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E736ED7-2AE4-4923-B435-BCF73382CF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E736ED7-2AE4-4923-B435-BCF73382CF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E736ED7-2AE4-4923-B435-BCF73382CF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7885A37A-D1BF-45E8-8D97-5D89626F22E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7885A37A-D1BF-45E8-8D97-5D89626F22E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7885A37A-D1BF-45E8-8D97-5D89626F22E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7885A37A-D1BF-45E8-8D97-5D89626F22E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
