@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2_AddTwoNumbers", "lc2_addtwonumbers\LC2_AddTwoNumbers.csproj", "{20D698FF-14D8-48EE-8099-56119D99D693}"
 EndProject
@@ -254,6 +254,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC953_VerifyingAnAlienDictionary", "LC953_VerifyingAnAlienDictionary\LC953_VerifyingAnAlienDictionary.csproj", "{188BAFA3-9C69-44D2-82B7-359801CA7979}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC311_SparseVectorMultiplication", "LC311_SparseVectorMultiplication\LC311_SparseVectorMultiplication.csproj", "{73BB0840-F496-483B-BBCA-09D425196FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC130_SurroundedRegions", "LC130_SurroundedRegions\LC130_SurroundedRegions.csproj", "{ADF9949F-05AA-4148-AD38-25CD495A0867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC904_FruitIntoBaskets", "LC904_FruitIntoBaskets\LC904_FruitIntoBaskets.csproj", "{54402AEB-3DBD-4C6B-BF42-CBCDBE5C9FB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC657_RobotToOrigin", "LC657_RobotToOrigin\LC657_RobotToOrigin.csproj", "{F7EFA010-1D21-471F-8905-2386EC22C8AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC341_FlattenNestedListIterator", "LC341_FlattenNestedListIterator\LC341_FlattenNestedListIterator.csproj", "{91AB73F4-F2AD-473B-842E-724B88FC680F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC240_SearchA2DMatrix", "LC240_SearchA2DMatrix\LC240_SearchA2DMatrix.csproj", "{865A8CA6-70CA-4CEF-A892-68189CDB85EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC34_FindFirstAndLastOccurenceOfNumberInSortedArray", "LC34_FindFirstAndLastOccurenceOfNumberInSortedArray\LC34_FindFirstAndLastOccurenceOfNumberInSortedArray.csproj", "{94184A1F-01BD-4034-9ACE-D290BC16B00C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -765,6 +777,30 @@ Global
 		{73BB0840-F496-483B-BBCA-09D425196FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73BB0840-F496-483B-BBCA-09D425196FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73BB0840-F496-483B-BBCA-09D425196FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF9949F-05AA-4148-AD38-25CD495A0867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF9949F-05AA-4148-AD38-25CD495A0867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF9949F-05AA-4148-AD38-25CD495A0867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF9949F-05AA-4148-AD38-25CD495A0867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54402AEB-3DBD-4C6B-BF42-CBCDBE5C9FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54402AEB-3DBD-4C6B-BF42-CBCDBE5C9FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54402AEB-3DBD-4C6B-BF42-CBCDBE5C9FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54402AEB-3DBD-4C6B-BF42-CBCDBE5C9FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7EFA010-1D21-471F-8905-2386EC22C8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7EFA010-1D21-471F-8905-2386EC22C8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7EFA010-1D21-471F-8905-2386EC22C8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7EFA010-1D21-471F-8905-2386EC22C8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AB73F4-F2AD-473B-842E-724B88FC680F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AB73F4-F2AD-473B-842E-724B88FC680F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AB73F4-F2AD-473B-842E-724B88FC680F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AB73F4-F2AD-473B-842E-724B88FC680F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865A8CA6-70CA-4CEF-A892-68189CDB85EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865A8CA6-70CA-4CEF-A892-68189CDB85EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865A8CA6-70CA-4CEF-A892-68189CDB85EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865A8CA6-70CA-4CEF-A892-68189CDB85EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94184A1F-01BD-4034-9ACE-D290BC16B00C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94184A1F-01BD-4034-9ACE-D290BC16B00C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94184A1F-01BD-4034-9ACE-D290BC16B00C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94184A1F-01BD-4034-9ACE-D290BC16B00C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
