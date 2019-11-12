@@ -78,7 +78,5 @@ namespace LC112_PathSum
 
             return HasRootToLeafPathSum(currentRoot.Left, target - currentRoot.Value) || HasRootToLeafPathSum(currentRoot.Right, target - currentRoot.Value);
         }
-
-        
     }
 }
