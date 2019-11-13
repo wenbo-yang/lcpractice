@@ -283,6 +283,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC843_GuessTheWord", "LC843
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC835_ImageOverlap", "LC835_ImageOverlap\LC835_ImageOverlap.csproj", "{4B78432B-481B-4E8E-8E40-EBDD0C269019}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC480_SlidingWindowMedian", "LC480_SlidingWindowMedian\LC480_SlidingWindowMedian.csproj", "{54346365-189C-4113-92A6-351D703FA2B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC802_EventualSafeNode", "LC802_EventualSafeNode\LC802_EventualSafeNode.csproj", "{63701ABD-C505-485E-AB95-98E935E0DDBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC803_BrickFallingWhenHit", "LC803_BrickFallingWhenHit\LC803_BrickFallingWhenHit.csproj", "{9BACB40D-B991-4E65-923B-06765FD4D04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC804_UniqueMorseCodeWords", "LC804_UniqueMorseCodeWords\LC804_UniqueMorseCodeWords.csproj", "{B5F0B20A-386A-488D-BB71-88FBB4A64560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC807_MaxSkylineIncrease", "LC807_MaxSkylineIncrease\LC807_MaxSkylineIncrease.csproj", "{28FF4534-7D39-40C3-8A1C-45EA208CE834}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -849,6 +859,26 @@ Global
 		{4B78432B-481B-4E8E-8E40-EBDD0C269019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B78432B-481B-4E8E-8E40-EBDD0C269019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B78432B-481B-4E8E-8E40-EBDD0C269019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54346365-189C-4113-92A6-351D703FA2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54346365-189C-4113-92A6-351D703FA2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54346365-189C-4113-92A6-351D703FA2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54346365-189C-4113-92A6-351D703FA2B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63701ABD-C505-485E-AB95-98E935E0DDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63701ABD-C505-485E-AB95-98E935E0DDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63701ABD-C505-485E-AB95-98E935E0DDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63701ABD-C505-485E-AB95-98E935E0DDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BACB40D-B991-4E65-923B-06765FD4D04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BACB40D-B991-4E65-923B-06765FD4D04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BACB40D-B991-4E65-923B-06765FD4D04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BACB40D-B991-4E65-923B-06765FD4D04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F0B20A-386A-488D-BB71-88FBB4A64560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F0B20A-386A-488D-BB71-88FBB4A64560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F0B20A-386A-488D-BB71-88FBB4A64560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F0B20A-386A-488D-BB71-88FBB4A64560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FF4534-7D39-40C3-8A1C-45EA208CE834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FF4534-7D39-40C3-8A1C-45EA208CE834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FF4534-7D39-40C3-8A1C-45EA208CE834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FF4534-7D39-40C3-8A1C-45EA208CE834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
