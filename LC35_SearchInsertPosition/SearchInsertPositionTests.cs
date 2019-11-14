@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC35_SearchInsertPosition
 {
     [TestClass]
-    public class SearchInsertPosition
+    public class SearchInsertPositionTests
     {
 
         // binary search in a sorted array

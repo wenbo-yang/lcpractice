@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC6E92C8-6BE3-411C-88F0-F3C0B774976C}</ProjectGuid>
+    <ProjectGuid>{98A12255-1DFB-4316-840F-A1D9CB209E86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC361_BombGuy</RootNamespace>
-    <AssemblyName>LC361_BombGuy</AssemblyName>
+    <RootNamespace>LC59_GenerateSpiralMatrix</RootNamespace>
+    <AssemblyName>LC59_GenerateSpiralMatrix</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BombGuyTests.cs" />
+    <Compile Include="SpiralMatrixTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
