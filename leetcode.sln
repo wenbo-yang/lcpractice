@@ -305,6 +305,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC65_ValidNumber", "LC65_Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC96_UniqueBSTNumbers", "LC96_UniqueBSTNumbers\LC96_UniqueBSTNumbers.csproj", "{ACCADE45-7698-475B-8B30-569569B29D16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC134_GasStation", "LC134_GasStation\LC134_GasStation.csproj", "{B37863A9-2CB2-4918-9E23-25804FB9877A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC135_Candy", "LC135_Candy\LC135_Candy.csproj", "{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -915,6 +919,14 @@ Global
 		{ACCADE45-7698-475B-8B30-569569B29D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACCADE45-7698-475B-8B30-569569B29D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACCADE45-7698-475B-8B30-569569B29D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37863A9-2CB2-4918-9E23-25804FB9877A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37863A9-2CB2-4918-9E23-25804FB9877A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37863A9-2CB2-4918-9E23-25804FB9877A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37863A9-2CB2-4918-9E23-25804FB9877A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

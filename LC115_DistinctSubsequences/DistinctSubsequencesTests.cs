@@ -21,7 +21,6 @@ namespace LC115_DistinctSubsequences
         private int GetUniqueSequenceCount(string source, string target)
         {
             // remember to pad source such that s[0] == t[0]
-
             var dp = GenerateDP(source, target);
             InitializeDP(dp);
 
