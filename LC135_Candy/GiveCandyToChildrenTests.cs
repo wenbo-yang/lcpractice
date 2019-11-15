@@ -70,6 +70,7 @@ namespace LC135_Candy
                 if (diff[i] > 0)
                 {
                     increasingCount++;
+                    CalculateDecreasingStack(decreasingStack, ref current);
                 }
                 else
                 {
@@ -87,13 +88,20 @@ namespace LC135_Candy
                 current += increasingCount + 1;
             }
 
+            CalculateDecreasingStack(decreasingStack, ref current);
+
+            return current + childWeighting.Length;
+        }
+
+        private void CalculateDecreasingStack(Stack<int> decreasingStack, ref int current)
+        {
             if (decreasingStack.Count > 1)
             {
                 var decreasingCount = 0;
                 do
                 {
                     var top = decreasingStack.Pop();
-                   
+
                     if (top < 0)
                     {
                         current += decreasingStack.Count + 1;
@@ -106,8 +114,6 @@ namespace LC135_Candy
                     current += decreasingCount + 1;
                 }
             }
-
-            return current + childWeighting.Length;
         }
 
         private int[] GetDiff(int[] childWeighting)

@@ -309,6 +309,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC134_GasStation", "LC134_G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC135_Candy", "LC135_Candy\LC135_Candy.csproj", "{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC150_EvaluateReversePolishNotation", "LC150_EvaluateReversePolishNotation\LC150_EvaluateReversePolishNotation.csproj", "{6B275AE6-22D2-45F9-87E8-1BD84968CAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC149_LinkedListCycle", "LC149_LinkedListCycle\LC149_LinkedListCycle.csproj", "{FF905980-9EA4-48A8-B3C7-0AC94E103D50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -927,6 +931,14 @@ Global
 		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAA28EA6-FDC7-4D8B-A8BA-68CFF377D7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B275AE6-22D2-45F9-87E8-1BD84968CAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B275AE6-22D2-45F9-87E8-1BD84968CAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B275AE6-22D2-45F9-87E8-1BD84968CAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B275AE6-22D2-45F9-87E8-1BD84968CAA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF905980-9EA4-48A8-B3C7-0AC94E103D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF905980-9EA4-48A8-B3C7-0AC94E103D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF905980-9EA4-48A8-B3C7-0AC94E103D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF905980-9EA4-48A8-B3C7-0AC94E103D50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
