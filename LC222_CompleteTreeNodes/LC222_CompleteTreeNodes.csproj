@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE55994D-CED1-497B-AC80-250FF4F2AC95}</ProjectGuid>
+    <ProjectGuid>{9933A15E-23B0-42DF-B076-2ABBAF6F2B1E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC218_SkyLineProblem</RootNamespace>
-    <AssemblyName>LC218_SkyLineProblem</AssemblyName>
+    <RootNamespace>LC222_CompleteTreeNodes</RootNamespace>
+    <AssemblyName>LC222_CompleteTreeNodes</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SkylineProblemTests.cs" />
+    <Compile Include="CompleteTreeNodesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
