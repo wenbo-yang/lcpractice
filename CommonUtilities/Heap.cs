@@ -35,6 +35,26 @@ namespace CommonUtilities
 
             return retVal;
         }
+
+        // assume this is o(1) search and o(logk) removal
+        public void Remove(T target)
+        {
+            for (int i = 0; i < _heap.Count; i++)
+            {
+                if (Comparer<T>.Default.Compare(_heap[i], target) == 0)
+                {
+                    Swap(0, Count - 1);
+                    _heap.RemoveAt(Count - 1);
+
+                    if (Count > 0)
+                    {
+                        HeapDown();
+                    }
+                }
+            }
+        }
+
+
         public int Count => _heap.Count;
         internal abstract void HeapUp();
         internal abstract void HeapDown();

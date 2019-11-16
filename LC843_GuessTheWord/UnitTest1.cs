@@ -1,12 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LC115_DistinctSubsequences
+namespace LC843_GuessTheWord
 {
     [TestClass]
-    // DP
-    public class UnitTest1
-    {        
+    public class GuessTheWordTests
+    {
         [TestMethod]
         public void TestMethod1()
         {
