@@ -57,9 +57,8 @@ namespace LC249_GroupStrings
                 var tempChar = new char[current.Length];
                 for (int j = 0; j < current.Length; j++)
                 {
-                    var c = result[i - 1][j] + 1;
-                    c = c > 'z' ? c - 26 : c;
-                    tempChar[j] = (char)c;
+                    var c = result[i - 1][j]  == 'z' ? 'a' : (char)(result[i - 1][j] + 1);
+                    tempChar[j] = c;
                 }
 
                 result[i] = new string(tempChar);

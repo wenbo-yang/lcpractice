@@ -11,9 +11,9 @@ namespace LC248_StrobogrammaticNumber
         public void GivenRange_FindNumberOfStrobogrammaticNumber_ShouldReturnCorrectNumber()
         {
             var low = "50";
-            var hight = "100";
+            var high = "100";
 
-            var result = FindNumberOfStrobogrammaticNumber("50", "100");
+            var result = FindNumberOfStrobogrammaticNumber(low, high);
 
             Assert.IsTrue(result == 3);
         }
