@@ -319,6 +319,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC162_FindPeakElement", "LC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC165_CompareVersions", "LC165_CompareVersions\LC165_CompareVersions.csproj", "{84FE707E-1729-47F5-8364-A0FC7B1D6528}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC289_GameOfLife", "LC289_GameOfLife\LC289_GameOfLife.csproj", "{0F3F7C08-4911-4C5D-82F8-1E8F60E1BFF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC298_BinaryTreeLongestConsecutiveSequence", "LC298_BinaryTreeLongestConsecutiveSequence\LC298_BinaryTreeLongestConsecutiveSequence.csproj", "{78E7EC0B-6F82-42D0-9278-161F71FCA58C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -957,6 +961,14 @@ Global
 		{84FE707E-1729-47F5-8364-A0FC7B1D6528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84FE707E-1729-47F5-8364-A0FC7B1D6528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84FE707E-1729-47F5-8364-A0FC7B1D6528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3F7C08-4911-4C5D-82F8-1E8F60E1BFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3F7C08-4911-4C5D-82F8-1E8F60E1BFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3F7C08-4911-4C5D-82F8-1E8F60E1BFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3F7C08-4911-4C5D-82F8-1E8F60E1BFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E7EC0B-6F82-42D0-9278-161F71FCA58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E7EC0B-6F82-42D0-9278-161F71FCA58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E7EC0B-6F82-42D0-9278-161F71FCA58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E7EC0B-6F82-42D0-9278-161F71FCA58C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
