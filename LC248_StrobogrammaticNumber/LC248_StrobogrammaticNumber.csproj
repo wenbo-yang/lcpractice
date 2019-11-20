@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA055DD5-315F-4491-B932-0A818A314DA5}</ProjectGuid>
+    <ProjectGuid>{BFEA6E12-4E07-455C-A4FE-730A84760450}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC821_ShortestDistanceBetweenTwoChars</RootNamespace>
-    <AssemblyName>LC821_ShortestDistanceBetweenTwoChars</AssemblyName>
+    <RootNamespace>LC248_StrobogrammaticNumber</RootNamespace>
+    <AssemblyName>LC248_StrobogrammaticNumber</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShortestDistanceBetweenTwoCharsTests.cs" />
+    <Compile Include="StrobogrammaticNumberTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -79,7 +79,6 @@ namespace LC269_AlienAlphabet
             return result;
         }
 
-
         private void InitializeGraph(List<string> wordList, Dictionary<char, HashSet<char>> graph, Dictionary<char, int> depth)
         {
             foreach (var word in wordList)
@@ -94,7 +93,6 @@ namespace LC269_AlienAlphabet
                 }
             }
         }
-
 
         private void MapGraph(List<string> wordList, Dictionary<char, HashSet<char>> graph, Dictionary<char, int> depth)
         {
