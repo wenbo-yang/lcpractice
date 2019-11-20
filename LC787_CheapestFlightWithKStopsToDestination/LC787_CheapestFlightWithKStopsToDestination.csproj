@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{330E14E3-40A8-4F6E-B7A5-BA79DA8C17E5}</ProjectGuid>
+    <ProjectGuid>{BD279E09-28DB-4826-A120-6CA6F763078A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC201_BitAndRange</RootNamespace>
-    <AssemblyName>LC201_BitAndRange</AssemblyName>
+    <RootNamespace>LC787_CheapestFlightWithKStopsToDestination</RootNamespace>
+    <AssemblyName>LC787_CheapestFlightWithKStopsToDestination</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitWiseRangeTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

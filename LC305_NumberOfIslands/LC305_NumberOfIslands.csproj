@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{330E14E3-40A8-4F6E-B7A5-BA79DA8C17E5}</ProjectGuid>
+    <ProjectGuid>{C23B5250-B811-4567-94FD-5C5E2F1051F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC201_BitAndRange</RootNamespace>
-    <AssemblyName>LC201_BitAndRange</AssemblyName>
+    <RootNamespace>LC305_NumberOfIslands</RootNamespace>
+    <AssemblyName>LC305_NumberOfIslands</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitWiseRangeTests.cs" />
+    <Compile Include="NumberOfIslandsIITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
