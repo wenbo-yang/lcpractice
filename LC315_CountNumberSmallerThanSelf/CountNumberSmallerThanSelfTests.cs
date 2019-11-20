@@ -12,10 +12,10 @@ namespace LC315_CountNumberSmallerThanSelf
         [TestMethod]
         public void GivenArray_CountNumberSmallerThanSelf_ShouldReturnCorrectArray()
         {
-            var input = new int[] {1, 5, 2, 6, 1 };
+            var input = new int[] { 1, 5, 2, 6, 1 };
 
             var result = CountNumberSmallerThanSelf(input);
-            
+
             Assert.IsTrue(result.SequenceEqual(new int[] { 0, 2, 1, 1, 0 }));
         }
         [TestMethod]
@@ -28,39 +28,44 @@ namespace LC315_CountNumberSmallerThanSelf
             Assert.IsTrue(result.SequenceEqual(new int[] { 4, 3, 2, 0, 0 }));
         }
 
-
         private int[] CountNumberSmallerThanSelf(int[] input)
         {
             var result = new int[input.Length];
+            input.Reverse();
 
-            var list = new List<Tuple<int, int>>();
-
-            for (int i = 0; i < input.Length; i++)
-            {
-                list.Add(new Tuple<int, int>(input[i], i));
-            }
-
-            list.Sort();
-
-            var diff = new int[input.Length];
-            diff[0] = list[0].Item1 == input[0] ? 0 : 1;
-
-            for (int i = 1; i < input.Length; i++)
-            {
-                diff[i] = diff[i - 1] + (list[i].Item1 == input[i] ? 0 : 1);
-            }
-
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (list[i].Item2 == list.Count - 1)
-                {
-                    continue;
-                }
-
-                result[list[i].Item2] = diff[i];
-            }
 
             return result;
         }
+
+        private void InsertIntoBinraySearchTree(BinaryTreeNode root, int value)
+        {
+            throw new NotImplementedException();
+        }
+
+        private int GetFrequency(BinaryTreeNode root, int value)
+        {
+            if (root.Value == value)
+            {
+                return root.LeftCount;        
+            }
+
+            if (root.Value > value)
+            {
+                return GetFrequency(root.Right, value);
+            }
+
+            return GetFrequency(root.Left, value);
+        }
+
+        public class BinaryTreeNode
+        {
+            public int Value { get; set; }
+            public int Frequency { get; set; }
+            public int LeftCount { get; set; }
+            public BinaryTreeNode Left { get; set; }
+            public BinaryTreeNode Right { get; set; }
+        }
+
     }
 }
+

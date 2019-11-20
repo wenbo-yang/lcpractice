@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB89A05C-6F6D-48A9-8668-3F1E146F136E}</ProjectGuid>
+    <ProjectGuid>{4E98BE3A-F42A-4B10-8B65-AC1D89658CC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC340_LongestSubstringWithKDistinctChars</RootNamespace>
-    <AssemblyName>LC340_LongestSubstringWithKDistinctChars</AssemblyName>
+    <RootNamespace>LC353_SnakeGame</RootNamespace>
+    <AssemblyName>LC353_SnakeGame</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LongestSubsctringWithKDistinctChars.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
