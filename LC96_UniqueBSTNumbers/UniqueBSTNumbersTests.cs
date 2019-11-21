@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC96_UniqueBSTNumbers
 {
     [TestClass]
-    public class UniqueBSTNumbers
+    public class UniqueBSTNumbersTests
     {
         [TestMethod]
         public void GivenRootNumber_GetUniqueBinaryTreeCount_ShouldReturnCorrectCount()

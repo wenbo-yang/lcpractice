@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC987_VerticalOrderTraversal
 {
     [TestClass]
-    public class VerticalOrderTraversal
+    public class VerticalOrderTraversalTests
     {
         [TestMethod]
         public void GivenBinaryTree_PrintVerticalOrder_ShouldPrintVerticalOrder()
