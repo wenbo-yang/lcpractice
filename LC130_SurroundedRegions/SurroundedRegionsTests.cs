@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC130_SurroundedRegions
 {
     [TestClass]
-    public class UnitTest1
+    public class SurroundedRegionsTests
     {
         [TestMethod]
         public void Given2DMatrix_FlipSurroundedRegion_ShouldReturnUpdatedMatrix()
