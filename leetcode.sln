@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2_AddTwoNumbers", "lc2_addtwonumbers\LC2_AddTwoNumbers.csproj", "{20D698FF-14D8-48EE-8099-56119D99D693}"
 EndProject
@@ -241,8 +241,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC418_FitToScreenLeft", "LC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC359_LogRateLimiter", "LC359_LogRateLimiter\LC359_LogRateLimiter.csproj", "{815B3D93-160F-4BF5-B6CE-DBF8C78F74B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC215_KthLargestInAnArray", "LC215_KthLargestInAnArray\LC215_KthLargestInAnArray.csproj", "{9E0FD8A5-8925-40FF-A7E3-CCD1F5B3D940}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC572_IsSubtree", "LC572_IsSubtree\LC572_IsSubtree.csproj", "{292135C6-D403-44F1-82F9-22B74E069064}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC821_ShortestDistanceBetweenTwoChars", "LC821_ShortestDistanceBetweenTwoChars\LC821_ShortestDistanceBetweenTwoChars.csproj", "{BA055DD5-315F-4491-B932-0A818A314DA5}"
@@ -374,6 +372,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC392_IsSubsequence", "LC392_IsSubsequence\LC392_IsSubsequence.csproj", "{CE748E24-AD1B-4EE7-AE65-F788ED45B5C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC399_EvaluateEquations", "LC399_EvaluateEquations\LC399_EvaluateEquations.csproj", "{CA0B4B49-9D3A-40E5-907D-CAFA9EB01F9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC80_RemoveDuplicatesFromSortedArray", "LC80_RemoveDuplicatesFromSortedArray\LC80_RemoveDuplicatesFromSortedArray.csproj", "{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC210_CourseScheduleII", "LC210_CourseScheduleII\LC210_CourseScheduleII.csproj", "{B9A5016F-A0D1-431C-A11F-8702A8E8C745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -857,10 +859,6 @@ Global
 		{815B3D93-160F-4BF5-B6CE-DBF8C78F74B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{815B3D93-160F-4BF5-B6CE-DBF8C78F74B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{815B3D93-160F-4BF5-B6CE-DBF8C78F74B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E0FD8A5-8925-40FF-A7E3-CCD1F5B3D940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E0FD8A5-8925-40FF-A7E3-CCD1F5B3D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E0FD8A5-8925-40FF-A7E3-CCD1F5B3D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E0FD8A5-8925-40FF-A7E3-CCD1F5B3D940}.Release|Any CPU.Build.0 = Release|Any CPU
 		{292135C6-D403-44F1-82F9-22B74E069064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{292135C6-D403-44F1-82F9-22B74E069064}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{292135C6-D403-44F1-82F9-22B74E069064}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -1125,6 +1123,14 @@ Global
 		{CA0B4B49-9D3A-40E5-907D-CAFA9EB01F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA0B4B49-9D3A-40E5-907D-CAFA9EB01F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA0B4B49-9D3A-40E5-907D-CAFA9EB01F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
