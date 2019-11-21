@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC804_UniqueMorseCodeWords
 {
     [TestClass]
-    public class UniqueMorseCodeWords
+    public class UniqueMorseCodeWordsTests
     {
         [TestMethod]
         public void GivenMorseCodeListAndSetOfWords_GetUniqueMorseCode_ShouldReturnCorrectNumber()

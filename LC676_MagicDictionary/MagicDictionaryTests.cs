@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC676_MagicDictionary
 {
     [TestClass]
-    public class UnitTest1
+    public class MagicDictionaryTests
     {
         [TestMethod]
         public void GivenMagicDictionaryAndValidWord_Search_ShouldReturnTrue()
