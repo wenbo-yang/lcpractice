@@ -33,14 +33,90 @@ namespace LC315_CountNumberSmallerThanSelf
             var result = new int[input.Length];
             input.Reverse();
 
+            BinaryTreeNode root = null;
+            for (int i = 0; i < input.Length; i++)
+            {
+                root = InsertIntoBinaryTree(null, input[i]);
+            }
+
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                result[i] = GetFrequency(root, input[i]);
+            }
 
             return result;
         }
 
-        private void InsertIntoBinraySearchTree(BinaryTreeNode root, int value)
+        private BinaryTreeNode InsertIntoBinaryTree(BinaryTreeNode root, int value)
         {
-            throw new NotImplementedException();
+            if (root == null)
+            {
+                return new BinaryTreeNode
+                {
+                    Value = value,
+                    Frequency = 1
+                };
+            }
+
+            if (root.Value == value)
+            {
+                root.Frequency++;
+                return root;
+            }
+
+            if (root.Value < value)
+            {
+                root.Right = InsertIntoBinaryTree(root.Right, value);
+            }
+            else
+            {
+                root.Left = InsertIntoBinaryTree(root.Left, value);
+                root.LeftCount++;
+            }
+
+            return root;
         }
+
+        //private void InsertIntoBinraySearchTree(BinaryTreeNode root, BinaryTreeNode parent, int value)
+        //{
+        //    if (root == null)
+        //    {
+        //        if (parent.Value > value)
+        //        {
+        //            parent.Right = new BinaryTreeNode
+        //            {
+        //                Value = value,
+        //                Frequency = 1
+        //            };
+        //        }
+        //        else
+        //        {
+        //            parent.Left = new BinaryTreeNode
+        //            {
+        //                Value = value,
+        //                Frequency = 1
+        //            };
+        //        }
+
+        //        return;
+        //    }
+
+        //    if (root.Value == value)
+        //    {
+        //        root.Frequency++;
+
+        //        return;
+        //    }
+
+        //    if (root.Value > value)
+        //    {
+        //        root.LeftCount++;
+        //        InsertIntoBinraySearchTree(root.Left, parent, value);
+        //        return;
+        //    }
+
+        //    InsertIntoBinraySearchTree(root.Right, parent, value);
+        //}
 
         private int GetFrequency(BinaryTreeNode root, int value)
         {

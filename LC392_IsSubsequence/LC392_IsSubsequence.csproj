@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44ABC2E7-0E43-4AE8-8B60-41FD3F2C9BD1}</ProjectGuid>
+    <ProjectGuid>{CE748E24-AD1B-4EE7-AE65-F788ED45B5C8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC307_RangeSumQueryMutable</RootNamespace>
-    <AssemblyName>LC307_RangeSumQueryMutable</AssemblyName>
+    <RootNamespace>LC392_IsSubsequence</RootNamespace>
+    <AssemblyName>LC392_IsSubsequence</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RangeSumQueryMutableTests.cs" />
+    <Compile Include="IsSubsequenceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

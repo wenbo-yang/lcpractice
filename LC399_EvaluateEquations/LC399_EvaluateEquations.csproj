@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44ABC2E7-0E43-4AE8-8B60-41FD3F2C9BD1}</ProjectGuid>
+    <ProjectGuid>{CA0B4B49-9D3A-40E5-907D-CAFA9EB01F9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC307_RangeSumQueryMutable</RootNamespace>
-    <AssemblyName>LC307_RangeSumQueryMutable</AssemblyName>
+    <RootNamespace>LC399_EvaluateEquations</RootNamespace>
+    <AssemblyName>LC399_EvaluateEquations</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RangeSumQueryMutableTests.cs" />
+    <Compile Include="EvaluationDivisionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44ABC2E7-0E43-4AE8-8B60-41FD3F2C9BD1}</ProjectGuid>
+    <ProjectGuid>{B9A5016F-A0D1-431C-A11F-8702A8E8C745}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC307_RangeSumQueryMutable</RootNamespace>
-    <AssemblyName>LC307_RangeSumQueryMutable</AssemblyName>
+    <RootNamespace>LC210_CourseScheduleII</RootNamespace>
+    <AssemblyName>LC210_CourseScheduleII</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RangeSumQueryMutableTests.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
