@@ -9,7 +9,7 @@ namespace LC80_RemoveDuplicatesFromSortedArray
         [TestMethod]
         public void GivenSortedArrayWithDuplicates_RemoveDuplicates_ShouldReturnArrayWith()
         {
-            var input = new int[] { 0, 0,1,1,1,2,2,3,3,4 };
+            var input = new int[] { 0,0,1,1,1,2,2,3,3,4 };
 
             var length = RemoveDuplicates(input);
 
@@ -27,8 +27,7 @@ namespace LC80_RemoveDuplicatesFromSortedArray
             {
                 if (input[i] != input[j])
                 {
-                    j++;
-                    input[j] = input[i];
+                    input[++j] = input[i];
                 }
 
                 i++;
