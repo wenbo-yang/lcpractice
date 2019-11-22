@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29326.143
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2_AddTwoNumbers", "lc2_addtwonumbers\LC2_AddTwoNumbers.csproj", "{20D698FF-14D8-48EE-8099-56119D99D693}"
 EndProject
@@ -376,6 +376,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC80_RemoveDuplicatesFromSortedArray", "LC80_RemoveDuplicatesFromSortedArray\LC80_RemoveDuplicatesFromSortedArray.csproj", "{9A12BFD6-6CB4-4A9F-8E13-0549D8DA0136}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC210_CourseScheduleII", "LC210_CourseScheduleII\LC210_CourseScheduleII.csproj", "{B9A5016F-A0D1-431C-A11F-8702A8E8C745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC207_CourseSchedule", "LC207_CourseSchedule\LC207_CourseSchedule.csproj", "{458F65F8-C467-4787-BDA2-364B8A92A9F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1131,6 +1133,10 @@ Global
 		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A5016F-A0D1-431C-A11F-8702A8E8C745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458F65F8-C467-4787-BDA2-364B8A92A9F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458F65F8-C467-4787-BDA2-364B8A92A9F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458F65F8-C467-4787-BDA2-364B8A92A9F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458F65F8-C467-4787-BDA2-364B8A92A9F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
