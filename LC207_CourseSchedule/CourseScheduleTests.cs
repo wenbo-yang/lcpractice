@@ -1,11 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LC210_CourseScheduleII
+namespace LC207_CourseSchedule
 {
     [TestClass]
-    // topological sort
-    public class UnitTest1
+    public class CourseScheduleTests
     {
         [TestMethod]
         public void TestMethod1()
