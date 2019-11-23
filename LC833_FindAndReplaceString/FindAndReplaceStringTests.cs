@@ -52,7 +52,6 @@ namespace LC833_FindAndReplaceString
             return new string(tempList.ToArray());
         }
 
-       
         private bool Matches(string input, int startIndex, string target)
         {
             var j = 0;
