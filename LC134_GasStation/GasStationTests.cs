@@ -20,7 +20,6 @@ namespace LC134_GasStation
 
         private int FindGasStationIndex(int[] gas, int[] cost)
         {
-
             var gasSum = 0;
             var costSum = 0;
             var start = 0; var reserve = 0;

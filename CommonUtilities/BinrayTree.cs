@@ -96,9 +96,9 @@ namespace CommonUtilities
 
     public class BinaryTreeNode
     {
-        public int Value { get; set; }
-        public BinaryTreeNode Left { get; set; }
-        public BinaryTreeNode Right { get; set; }
+        public int Value;
+        public BinaryTreeNode Left;
+        public BinaryTreeNode Right; 
     }
 
 }
