@@ -19,8 +19,7 @@ namespace LC772_BasicCalculator
 
         private int Calculate(string input)
         {
-            input.Replace(" ", "");
-            return CalculateHelper(input);
+            return CalculateHelper(input.Replace(" ", ""));
         }
 
         private int CalculateHelper(string input)
@@ -28,32 +27,76 @@ namespace LC772_BasicCalculator
             var left = "";
             var right = "";
             var operatorIndex = -1;
+            var rightIndex = 0;
             if (input.StartsWith("("))
             {
                 var closing = FindCorrespondingClosing(input);
+                if (closing == -1)
+                {
+                    throw new Exception("should not happen");
+                }
+
                 left = input.Substring(1, closing - 1);
-                input = closing == input.Length - 1 ? "" : input.Substring(closing + 1);
+
+                rightIndex = closing + 1;
+            }
+            else
+            {
+                operatorIndex = FindFirstOperatorIndex(input, 0);
+
+                left = input.Substring(0, operatorIndex);
+
+                rightIndex = operatorIndex;
             }
 
-            if (string.IsNullOrEmpty(input))
+            if (rightIndex >= input.Length)
             {
                 return Convert.ToInt32(left);
             }
 
-            operatorIndex = FindFirstExpressionIndex(input);
+            operatorIndex = FindFirstOperatorIndex(input, rightIndex);
+
             right = input.Substring(operatorIndex + 1);
             
             return CalculateBasicExpression(CalculateHelper(left), CalculateHelper(right), input[operatorIndex].ToString());
         }
 
-        private int FindFirstExpressionIndex(string input)
+        private int FindFirstOperatorIndex(string input, int startIndex)
         {
-            throw new NotImplementedException();
+            for (int i = startIndex; i < input.Length; i++)
+            {
+                var c = input[i];
+                if (c == '*' || c == '/' || c == '-' || c == '+')
+                {
+                    return i;
+                }
+            }
+
+            return input.Length;
         }
 
         private int FindCorrespondingClosing(string input)
         {
-            throw new NotImplementedException();
+            var stack = new Stack<char>();
+            stack.Push(input[0]);
+            for (int i = 1; i < input.Length; i++)
+            {
+                if (input[i] == '(')
+                {
+                    stack.Push(input[i]);
+                }
+                else if (input[i] == ')')
+                {
+                    stack.Pop();
+                }
+
+                if (stack.Count == 0)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         private int CalculateBasicExpression(int left, int right, string operation)
