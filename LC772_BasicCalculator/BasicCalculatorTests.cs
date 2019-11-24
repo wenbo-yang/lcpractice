@@ -31,13 +31,13 @@ namespace LC772_BasicCalculator
             if (input.StartsWith("("))
             {
                 var closing = FindCorrespondingClosing(input);
+
                 if (closing == -1)
                 {
                     throw new Exception("should not happen");
                 }
 
                 left = input.Substring(1, closing - 1);
-
                 rightIndex = closing + 1;
             }
             else
