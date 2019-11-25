@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LC736_ParseLispExpressions
 {
     [TestClass]
-    public class UnitTest1
+    public class ParseLispExpressionsTests
     {
         [TestMethod]
         public void TestMethod1()
