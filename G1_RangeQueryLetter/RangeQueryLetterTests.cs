@@ -26,6 +26,16 @@ namespace G1_RangeQueryLetter
             Assert.IsTrue(result.Count == 2 && result.Contains('Y') && result.Contains('Z'));
         }
 
+        [TestMethod]
+        public void GivenAnotherListOfRangesLetters_RangeQueryLetter_ShouldReturnListOfLetters()
+        {
+            var input = new List<Tuple<int, int, char>> { new Tuple<int, int, char>(0, 4, 'X'), new Tuple<int, int, char>(3, 4, 'Y'), new Tuple<int, int, char>(5, 7, 'Z') };
+            var rangeQueryLetter = new RangeQueryLetter().Build(input);
+
+            var result = rangeQueryLetter.Query(0, 5);
+            Assert.IsTrue(result.Count == 2 && result.Contains('X') && result.Contains('Y'));
+        }
+
 
         public class RangeQueryLetter
         {
@@ -53,17 +63,16 @@ namespace G1_RangeQueryLetter
                 var result = new HashSet<char>();
                 foreach (var range in _rangeList)
                 {
-                    if (range.Item1 > end)
+                    if (range.Item1 >= end)
                     {
                         break;
                     }
 
-                    if (range.Item1 <= start && range.Item2)
+                    if (range.Item2)
                     {
                         result.Add(range.Item3);
                     }
-
-                    if (range.Item1 < start && !range.Item2)
+                    else if (range.Item1 < start)
                     {
                         result.Remove(range.Item3);
                     }

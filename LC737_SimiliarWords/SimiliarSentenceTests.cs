@@ -78,51 +78,78 @@ namespace LC737_SimiliarWords
                 return false;
             }
 
-            var table = ParseIntoParentDictionary(pairs);
+            var set = new UnionFindSet().Build(pairs);
 
             for (int i = 0; i < sentence1.Length; i++)
             {
-                var word1 = sentence1[i];
-                var word2 = sentence2[i];
-
-                if (word1 == word2)
+                if (sentence1[i] != sentence2[i])
                 {
-                    continue;
-                }
+                    var realMeaning1 = set.Find(sentence1[i]);
+                    var realMeaning2 = set.Find(sentence2[i]);
 
-                if (table.ContainsKey(word1) && table.ContainsKey(word2))
-                {
-                    if (table[word1] != table[word2])
+                    if (realMeaning1 != realMeaning2)
                     {
                         return false;
                     }
                 }
-                else
-                {
-                    return false;
-                }
             }
 
-            return true;
+            return true;   
         }
 
-        private Dictionary<string, string> ParseIntoParentDictionary(string[][] pairs)
+        public class UnionFindSet
         {
-            var result = new Dictionary<string, string>();
-            foreach (var pair in pairs)
+            private Dictionary<string, string> _childToParentTable = new Dictionary<string, string>();
+
+            public UnionFindSet Build(string[][] edges)
             {
-                if (!result.ContainsKey(pair[0]))
+                foreach (var edge in edges)
                 {
-                    result.Add(pair[0], pair[0]);
+                    if (!_childToParentTable.ContainsKey(edge[0]) && !_childToParentTable.ContainsKey(edge[1]))
+                    {
+                        _childToParentTable.Add(edge[0], edge[0]);
+                        _childToParentTable.Add(edge[1], edge[0]);
+                    }
+
+                    if (_childToParentTable.ContainsKey(edge[0]) && _childToParentTable.ContainsKey(edge[1]))
+                    {
+                        var realParent0 = Find(edge[0]);
+                        var realParent1 = Find(edge[1]);
+
+                        if (realParent0 != realParent1)
+                        {
+                            // join distinct sets
+                            _childToParentTable[realParent0] = realParent1;
+                        }
+
+                        continue;
+                    }
+
+                    var one = _childToParentTable.ContainsKey(edge[0]) ? edge[0] : edge[1];
+                    var theOther = one == edge[0] ? edge[1] : edge[0];
+
+                    UnionOneWithTheOthet(one, theOther);
                 }
 
-                if (!result.ContainsKey(pair[1]))
-                {
-                    result.Add(pair[1], result[pair[0]]);
-                }
+                return this;
             }
 
-            return result;
+            private void UnionOneWithTheOthet(string one, string theOther)
+            {
+                var realParent = Find(one);
+                _childToParentTable.Add(theOther, realParent);
+            }
+
+            public string Find(string child)
+            {
+                if (_childToParentTable[child] != child)
+                {
+                    _childToParentTable[child] = Find(_childToParentTable[child]);
+                    return _childToParentTable[child];
+                }
+
+                return child;
+            }
         }
     }
 }

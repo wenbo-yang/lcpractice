@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CommonUtilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LC684_RedundantConnection
@@ -20,36 +21,12 @@ namespace LC684_RedundantConnection
 
         private int[] FindRedundantConnection(int[][] edges)
         {
-            var edgesList = new List<Tuple<int, int>>();
-            for (int i = 0; i < edges.Length; i++)
-            {
-                edgesList.Add(new Tuple<int, int>(edges[i][0], edges[i][1]));
-            }
+            var set = new UnionFindSet<int>().Build(edges);
 
-            edgesList.Sort();
+            set.GetRedundantEdges();
 
-            var parentTable = new Dictionary<int, int>();
-
-            var current = new int[2];
-            foreach (var edge in edgesList)
-            {
-                // union
-                if (!parentTable.ContainsKey(edge.Item1))
-                {
-                    parentTable.Add(edge.Item1, edge.Item1);
-                }
-
-                if (!parentTable.ContainsKey(edge.Item2))
-                {
-                    parentTable.Add(edge.Item2, parentTable[edge.Item1]);
-                }
-                else
-                {   // find
-                    current[0] = parentTable[edge.Item2]; current[1] = edge.Item2;
-                }
-            }
-
-            return current;
+            return set.GetRedundantEdges().Last();
         }
+
     }
 }
