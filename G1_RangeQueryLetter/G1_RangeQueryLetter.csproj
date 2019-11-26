@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7885A37A-D1BF-45E8-8D97-5D89626F22E0}</ProjectGuid>
+    <ProjectGuid>{0976B250-0E36-40FF-A0A6-F94BA336D2A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC463_FindPerimeter</RootNamespace>
-    <AssemblyName>LC463_FindPerimeter</AssemblyName>
+    <RootNamespace>G1_RangeQueryLetter</RootNamespace>
+    <AssemblyName>G1_RangeQueryLetter</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FindPerimeterTests.cs" />
+    <Compile Include="RangeQueryLetterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
