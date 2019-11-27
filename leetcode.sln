@@ -435,6 +435,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC540_SingleElementInSorted
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC505_MazeII", "LC505_MazeII\LC505_MazeII.csproj", "{1089CAB9-7EAD-40D5-8957-0DE28F0B9E35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC503_NextGreaterElementII", "LC503_NextGreaterElementII\LC503_NextGreaterElementII.csproj", "{B8CDDE0B-49D3-4054-B21E-A68DA193A87A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC499_MazeIII", "LC499_MazeIII\LC499_MazeIII.csproj", "{014225D4-FF96-41F6-9DBF-A4B53EAAECF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1305,6 +1309,14 @@ Global
 		{1089CAB9-7EAD-40D5-8957-0DE28F0B9E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1089CAB9-7EAD-40D5-8957-0DE28F0B9E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1089CAB9-7EAD-40D5-8957-0DE28F0B9E35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CDDE0B-49D3-4054-B21E-A68DA193A87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CDDE0B-49D3-4054-B21E-A68DA193A87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CDDE0B-49D3-4054-B21E-A68DA193A87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CDDE0B-49D3-4054-B21E-A68DA193A87A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014225D4-FF96-41F6-9DBF-A4B53EAAECF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014225D4-FF96-41F6-9DBF-A4B53EAAECF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014225D4-FF96-41F6-9DBF-A4B53EAAECF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014225D4-FF96-41F6-9DBF-A4B53EAAECF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
