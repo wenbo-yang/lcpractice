@@ -427,6 +427,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC685_RedundantEdges", "LC6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC659_SplitArrayIntoConsecutiveSequence", "LC659_SplitArrayIntoConsecutiveSequence\LC659_SplitArrayIntoConsecutiveSequence.csproj", "{021982FF-C76D-4113-908F-5E00C5F8ECAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC652_FindDuplicateSubtrees", "LC652_FindDuplicateSubtrees\LC652_FindDuplicateSubtrees.csproj", "{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1281,6 +1283,10 @@ Global
 		{021982FF-C76D-4113-908F-5E00C5F8ECAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{021982FF-C76D-4113-908F-5E00C5F8ECAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{021982FF-C76D-4113-908F-5E00C5F8ECAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
