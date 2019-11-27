@@ -8,7 +8,7 @@ namespace LC499_MazeIII
     public class MazeIIITests
     {
         [TestMethod]
-        public void GivenMazeStartAndEndCoor_GetShortestPath_ShouldReturnShortestPath()
+        public void GivenMazeStartCannotReachEndCoor_GetShortestPath_ShouldReturnNothing()
         {
             var grid = new int[][] { new int[] { 0, 0, 0, 0, 0},
                                      new int[] { 1, 1, 0, 0, 1},
@@ -19,9 +19,23 @@ namespace LC499_MazeIII
 
             var pathList = GetShortestPath(grid, 4, 3, 3, 0);
 
-            Assert.IsTrue(pathList.Count == 2);
-            Assert.IsTrue(pathList.Contains("l") && pathList.Contains("ul"));
+            Assert.IsTrue(pathList.Count == 0);
+        }
 
+        [TestMethod]
+        public void GivenMazeStartCanReachEndCoor_GetShortestPath_ShouldReturnNothing()
+        {
+            var grid = new int[][] { new int[] { 0, 0, 0, 0, 0},
+                                     new int[] { 1, 1, 0, 0, 1},
+                                     new int[] { 0, 0, 0, 0, 0},
+                                     new int[] { 0, 1, 0, 0, 1},
+                                     new int[] { 0, 1, 0, 0, 0}};
+
+
+            var pathList = GetShortestPath(grid, 4, 3, 0, 1);
+
+            Assert.IsTrue(pathList.Count == 2);
+            Assert.IsTrue(pathList.Contains("lul") && pathList.Contains("ul"));
         }
 
         private List<string> GetShortestPath(int[][] grid, int startRow, int startCol, int endRow, int endCol)
@@ -40,7 +54,12 @@ namespace LC499_MazeIII
             {
                 visited.Add((current.row, current.col), current.distance);
             }
-            
+
+            if (current.distance > visited[(current.row, current.col)])
+            {
+                return;
+            }
+
             if (current.distance < visited[(current.row, current.col)])
             {
                 visited[(current.row, current.col)] = current.distance;
@@ -50,7 +69,7 @@ namespace LC499_MazeIII
                     result.Clear();
                 }
             }
-
+            
             if (current.row == endRow && current.col == endCol)
             {
                 result.Add(new string(lineage.ToArray()));
@@ -62,7 +81,7 @@ namespace LC499_MazeIII
                 return;
             }
 
-            var destination = GoUp(current, grid);
+            var destination = GoUp(current, endRow, endCol, grid);
             if (destination.row != current.row)
             {
                 lineage.Add('u');
@@ -70,7 +89,7 @@ namespace LC499_MazeIII
                 lineage.RemoveAt(lineage.Count - 1);
             }
 
-            destination = GoDown(current, grid);
+            destination = GoDown(current, endRow, endCol, grid);
             if (destination.row != current.row)
             {
                 lineage.Add('d');
@@ -78,7 +97,7 @@ namespace LC499_MazeIII
                 lineage.RemoveAt(lineage.Count - 1);
             }
 
-            destination = GoLeft(current, grid);
+            destination = GoLeft(current, endRow, endCol, grid);
             if (destination.col != current.col)
             {
                 lineage.Add('l');
@@ -86,7 +105,7 @@ namespace LC499_MazeIII
                 lineage.RemoveAt(lineage.Count - 1);
             }
 
-            destination = GoRight(current, grid);
+            destination = GoRight(current, endRow, endCol, grid);
             if (destination.col != current.col)
             {
                 lineage.Add('r');
@@ -95,45 +114,61 @@ namespace LC499_MazeIII
             }
         }
 
-        private (int row, int col, int distance) GoRight((int row, int col, int distance) current, int[][] grid)
+        private (int row, int col, int distance) GoRight((int row, int col, int distance) current, int endRow, int endCol, int[][] grid)
         {
             var destination = current;
-            while (CanGo(current.row, current.col + 1, grid))
+            while (CanGo(destination.row, destination.col + 1, grid))
             {
                 destination.col++; destination.distance++;
+                if (destination.row == endRow && destination.col == endCol)
+                {
+                    break;
+                }
             }
 
             return destination;
         }
 
-        private (int row, int col, int distance) GoLeft((int row, int col, int distance) current, int[][] grid)
+        private (int row, int col, int distance) GoLeft((int row, int col, int distance) current, int endRow, int endCol, int[][] grid)
         {
             var destination = current;
-            while (CanGo(current.row, current.col - 1, grid))
+            while (CanGo(destination.row, destination.col - 1, grid))
             {
                 destination.col--; destination.distance++;
+                if (destination.row == endRow && destination.col == endCol)
+                {
+                    break;
+                }
             }
 
             return destination;
         }
 
-        private (int row, int col, int distance) GoDown((int row, int col, int distance) current, int[][] grid)
+        private (int row, int col, int distance) GoDown((int row, int col, int distance) current, int endRow, int endCol, int[][] grid)
         {
             var destination = current;
-            while (CanGo(current.row + 1, current.col, grid))
+            while (CanGo(destination.row + 1, destination.col, grid))
             {
                 destination.row++; destination.distance++;
+                if (destination.row == endRow && destination.col == endCol)
+                {
+                    break;
+                }
             }
 
             return destination;
         }
 
-        private (int row, int col, int distance) GoUp((int row, int col, int distance) current, int[][] grid)
+        private (int row, int col, int distance) GoUp((int row, int col, int distance) current, int endRow, int endCol, int[][] grid)
         {
             var destination = current;
-            while (CanGo(current.row - 1, current.col, grid))
+            while (CanGo(destination.row - 1, destination.col, grid))
             {
                 destination.row--; destination.distance++;
+                if (destination.row == endRow && destination.col == endCol)
+                {
+                    break;
+                }
             }
 
             return destination;
