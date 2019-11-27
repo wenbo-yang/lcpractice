@@ -14,7 +14,7 @@ namespace LC737_SimiliarWords
             var sentence1 = new string[] { "fine", "acting", "skills" };
             var sentence2 = new string[] { "wonderful", "drama", "talent" };
 
-            var pairs = new string[][] { new string[] { "fine", "great" }, new string[] { "great", "good"}, new string[] { "good", "wonderful" }, new string[] { "acting", "drama" }, new string[] { "skills", "talent" } };
+            var pairs = new string[][] { new string[] { "fine", "great" }, new string[] { "good", "great"}, new string[] { "good", "wonderful" }, new string[] { "acting", "drama" }, new string[] { "skills", "talent" } };
 
             var result = IsSimiliar(sentence1, sentence2, pairs);
 
