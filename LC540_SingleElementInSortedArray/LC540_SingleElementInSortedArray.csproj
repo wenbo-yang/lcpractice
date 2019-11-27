@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35FD6EE9-FB5E-40DC-88D2-7F6024371CAE}</ProjectGuid>
+    <ProjectGuid>{FD225AEA-B344-4756-A528-6A4E000DF7DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC652_FindDuplicateSubtrees</RootNamespace>
-    <AssemblyName>LC652_FindDuplicateSubtrees</AssemblyName>
+    <RootNamespace>LC540_SingleElementInSortedArray</RootNamespace>
+    <AssemblyName>LC540_SingleElementInSortedArray</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,17 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FindDuplicateSubtreesTests.cs" />
+    <Compile Include="SingleElementInSortedArrayTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CommonUtilities\CommonUtilities.csproj">
-      <Project>{393708db-e199-4a6c-a163-b39f911ece8f}</Project>
-      <Name>CommonUtilities</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
