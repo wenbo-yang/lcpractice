@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBE8F930-58DB-48EB-9149-3905E43468D0}</ProjectGuid>
+    <ProjectGuid>{3F15E329-3C81-40FA-881F-5BD9D76E84FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC438_FindAllAnagramsInAString</RootNamespace>
-    <AssemblyName>LC438_FindAllAnagramsInAString</AssemblyName>
+    <RootNamespace>LC312_BurstingBalloons</RootNamespace>
+    <AssemblyName>LC312_BurstingBalloons</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FindAllAnagramsInStringTests.cs" />
+    <Compile Include="BurstingBalloonsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

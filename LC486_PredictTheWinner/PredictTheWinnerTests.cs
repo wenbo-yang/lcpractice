@@ -11,7 +11,7 @@ namespace LC486_PredictTheWinner
         [TestMethod]
         public void GivenScoresAndPlayer1CanWin_PredictWinner_ShouldReturnTrue()
         {
-            var scores = new int[] { 1, 233, 5,  7 };
+            var scores = new int[] { 1, 233, 5, 7 };
             var result = PredictWinner(scores);
 
             Assert.IsTrue(result);
@@ -50,16 +50,26 @@ namespace LC486_PredictTheWinner
                 return value;
             }
 
-            var sum = isPlayer1 ? Math.Min(
-                    scores[left] + GetMax(scores, left + 1, right, subSum, !isPlayer1),
-                    scores[right] + GetMax(scores, left, right - 1, subSum, !isPlayer1)) :
-                    Math.Max(
-                        GetMax(scores, left + 1, right, subSum, !isPlayer1),
-                        GetMax(scores, left, right - 1, subSum, !isPlayer1));
+            var sum = 0;
 
+            if (isPlayer1)
+            {
+                var leftSum = scores[left] + GetMax(scores, left + 1, right, subSum, !isPlayer1);
+                var rightSum = scores[right] + GetMax(scores, left, right - 1, subSum, !isPlayer1);
+                sum = Math.Max(leftSum, rightSum);
+            }
+            else
+            {
+                var leftSum = GetMax(scores, left + 1, right, subSum, !isPlayer1);
+                var rightSum = GetMax(scores, left, right - 1, subSum, !isPlayer1);
+
+                sum = Math.Min(leftSum, rightSum);
+            }
+                
             subSum.Add((left, right, isPlayer1), sum);
 
             return sum;
+
         }
     }
 }
