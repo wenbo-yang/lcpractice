@@ -473,6 +473,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC312_BurstingBalloons", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1269_NumberOfWaysToStayAtTheSamePlace", "LC1269_NumberOfWaysToStayAtTheSamePlace\LC1269_NumberOfWaysToStayAtTheSamePlace.csproj", "{E2760900-1269-48D0-98B2-4410A319C365}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1235_MaximumProfitInJobScheduling", "LC1235_MaximumProfitInJobScheduling\LC1235_MaximumProfitInJobScheduling.csproj", "{531A637A-5A89-4D2C-80AC-A5836EDFE77A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1419,6 +1421,10 @@ Global
 		{E2760900-1269-48D0-98B2-4410A319C365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2760900-1269-48D0-98B2-4410A319C365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2760900-1269-48D0-98B2-4410A319C365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531A637A-5A89-4D2C-80AC-A5836EDFE77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531A637A-5A89-4D2C-80AC-A5836EDFE77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531A637A-5A89-4D2C-80AC-A5836EDFE77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531A637A-5A89-4D2C-80AC-A5836EDFE77A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
