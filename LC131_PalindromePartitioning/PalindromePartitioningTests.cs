@@ -15,49 +15,66 @@ namespace LC131_PalindromePartitioning
             var result = PalindromePartitioning(input);
 
             Assert.IsTrue(result.Count == 2);
-            Assert.IsTrue(result[0].Contains("aa"));
+            Assert.IsTrue(result[0].Contains("aa") && result[0].Contains("b"));
             Assert.IsTrue(result[1].Contains("a") && result[1].Contains("b"));
+        }
+
+        [TestMethod]
+        public void GivenAnotherString_ParlindromePartition_ShouldReturnListOfParlindromes()
+        {
+            var input = "caaa";
+
+            var result = PalindromePartitioning(input);
+
+            Assert.IsTrue(result.Count == 3);
+            Assert.IsTrue(result[0].Contains("aaa") && result[0].Contains("c"));
+            Assert.IsTrue(result[1].Contains("c") && result[1].Contains("aa"));
+            Assert.IsTrue(result[1].Contains("c") && result[1].Contains("a"));
         }
 
         private List<List<string>> PalindromePartitioning(string input)
         {
             var result = new List<List<string>>();
             var dp = GenerateDP(input.Length);
-
+            InitializeDP(dp);
             DeteminePalidrome(dp, input);
 
-            MatrixDiagnoTrace(dp, input, result);
-
+            for (int i = input.Length; i >= 1; i--)
+            {
+                GetParlidromePartitioningWithMinLength(dp, input, i, result);
+            }
+           
             return result;
         }
 
-        private void MatrixDiagnoTrace(bool[][] dp, string input, List<List<string>> result)
+        private void InitializeDP(bool[][] dp)
         {
-            for (int i = dp.Length - 1; i >= 0; i--)
+            for (int i = 0; i < dp.Length; i++)
             {
-                var position = new int[] { 0, i };
-                result.Add(new List<string>());
-                do
-                {
-                    if (dp[position[0]][position[1]])
-                    {
-                        result[result.Count - 1].Add(input.Substring(position[0], position[1] - position[0] + 1));
-                    }
-
-                    position[0]++; position[1]++;
-                }
-                while (CanMove(position, dp));
-
-                if (result[result.Count - 1].Count == 0)
-                {
-                    result.RemoveAt(result.Count - 1);
-                }
+                dp[i][i] = true;
             }
         }
 
-        private bool CanMove(int[] position, bool[][] dp)
+        private void GetParlidromePartitioningWithMinLength(bool[][] dp, string input, int minLength, List<List<string>> result)
         {
-            return position[0] >= 0 && position[1] >= 0 && position[0] < dp.Length && position[1] < dp[0].Length;
+            result.Add(new List<string>());
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (i + minLength <= input.Length && dp[i][i + minLength - 1])
+                {
+                    result[result.Count - 1].Add(input.Substring(i, minLength));
+                    i = i + minLength - 1;
+                }
+                else
+                {
+                    result[result.Count - 1].Add(input[i].ToString());
+                }
+            }
+
+            if (string.IsNullOrEmpty(result[result.Count - 1].Find(x => x.Length == minLength)))
+            {
+                result.RemoveAt(result.Count - 1);
+            }
         }
 
         private void DeteminePalidrome(bool[][] dp, string input)
@@ -66,13 +83,9 @@ namespace LC131_PalindromePartitioning
             {
                 for (int j = i; j < dp.Length; j++)
                 {
-                    if (i == j)
+                    if (i != j)
                     {
-                        dp[i][j] = true;
-                    }
-                    else
-                    {
-                        dp[i][j] = input[i] == input[j] && (i + 1 <= j - 1 ? dp[i + 1][j - 1] : true);
+                        dp[i][j] = input[i] == input[j] && (i == j - 1 ? true : dp[i + 1][j - 1]);
                     }
                 }
             }
