@@ -479,6 +479,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC131_PalindromePartitionin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC132_PalindromePartitioningII", "LC132_PalindromePartitioningII\LC132_PalindromePartitioningII.csproj", "{028412A8-ABA1-48FF-8CC3-0BF91B1BF1CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1293_ShortestPathWithObstaclesEliminations", "LC1293_ShortestPathWithObstaclesEliminations\LC1293_ShortestPathWithObstaclesEliminations.csproj", "{3ADF0458-9867-469D-95B4-D9DA51E004D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1292_MaximumSideLengthOfASquareWithSumLessOrEqualToTarget", "LC1292_MaximumSideLengthOfASquareWithSumLessOrEqualToTarget\LC1292_MaximumSideLengthOfASquareWithSumLessOrEqualToTarget.csproj", "{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1437,6 +1441,14 @@ Global
 		{028412A8-ABA1-48FF-8CC3-0BF91B1BF1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{028412A8-ABA1-48FF-8CC3-0BF91B1BF1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{028412A8-ABA1-48FF-8CC3-0BF91B1BF1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADF0458-9867-469D-95B4-D9DA51E004D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADF0458-9867-469D-95B4-D9DA51E004D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADF0458-9867-469D-95B4-D9DA51E004D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADF0458-9867-469D-95B4-D9DA51E004D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
