@@ -487,6 +487,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1291_SequentialDigits", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1290_ConvertLinkedListToBinaryNumber", "LC1290_ConvertLinkedListToBinaryNumber\LC1290_ConvertLinkedListToBinaryNumber.csproj", "{C8C0D80A-9E77-4EF1-9796-E46A50F27038}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC931_MinimumFallingPathSum", "LC931_MinimumFallingPathSum\LC931_MinimumFallingPathSum.csproj", "{3638F647-371B-4A27-8061-929EC90BBA3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1461,6 +1463,10 @@ Global
 		{C8C0D80A-9E77-4EF1-9796-E46A50F27038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C0D80A-9E77-4EF1-9796-E46A50F27038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C0D80A-9E77-4EF1-9796-E46A50F27038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3638F647-371B-4A27-8061-929EC90BBA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3638F647-371B-4A27-8061-929EC90BBA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3638F647-371B-4A27-8061-929EC90BBA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3638F647-371B-4A27-8061-929EC90BBA3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
