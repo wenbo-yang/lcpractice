@@ -489,6 +489,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1290_ConvertLinkedListToB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC931_MinimumFallingPathSum", "LC931_MinimumFallingPathSum\LC931_MinimumFallingPathSum.csproj", "{3638F647-371B-4A27-8061-929EC90BBA3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1288_RemoveCoveredIntervals", "LC1288_RemoveCoveredIntervals\LC1288_RemoveCoveredIntervals.csproj", "{A9BF542C-29C5-4229-9680-E982A0341815}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1467,6 +1469,10 @@ Global
 		{3638F647-371B-4A27-8061-929EC90BBA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3638F647-371B-4A27-8061-929EC90BBA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3638F647-371B-4A27-8061-929EC90BBA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BF542C-29C5-4229-9680-E982A0341815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BF542C-29C5-4229-9680-E982A0341815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BF542C-29C5-4229-9680-E982A0341815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BF542C-29C5-4229-9680-E982A0341815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
