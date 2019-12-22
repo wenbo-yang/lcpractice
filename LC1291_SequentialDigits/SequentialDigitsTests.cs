@@ -38,6 +38,59 @@ namespace LC1291_SequentialDigits
             Assert.IsTrue(result.SequenceEqual(new List<int> { 123, 234, 345, 456, 567, 678, 789, 1234, 2345}));
         }
 
+        [TestMethod]
+        public void GivenRangeWithMultipleSegments_GetSequentialDigitsHardcoded_ShouldReturnList()
+        {
+            var low = 100; var high = 3000;
+
+            var result = GetSequentialDigits(low, high);
+
+            Assert.IsTrue(result.SequenceEqual(new List<int> { 123, 234, 345, 456, 567, 678, 789, 1234, 2345 }));
+        }
+
+        [TestMethod]
+        public void GivenInvalidRange_GetSequentialDigitsHardcoded_ShouldReturnList()
+        {
+            var low = 100; var high = 120;
+
+            var result = GetSequentialDigitsHardcoded(low, high);
+
+            Assert.IsTrue(result.Count == 0);
+        }
+
+        private List<int> GetSequentialDigitsHardcoded(int low, int high)
+        {
+            var sequentialDigits = new int[]
+            {
+                0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                12, 23, 34, 45, 56, 67, 78, 89,
+                123, 234, 345, 456, 567, 678, 789,
+                1234, 2345, 3456, 4567, 5678, 6789,
+                12345, 23456, 34567, 45678, 56789,
+                123456, 234567, 345678, 456789,
+                1234567, 2345678, 3456789,
+                12345678, 23456789,
+                123456789, int.MaxValue
+            };
+
+            var result = new List<int>();
+
+            for (int i = 1; i < sequentialDigits.Length - 1; i++)
+            {
+                if (high >= sequentialDigits[i] && high < sequentialDigits[i + 1])
+                {
+                    break;
+                }
+
+                if (low > sequentialDigits[i - 1] && low <= sequentialDigits[i])
+                {
+                    result.Add(sequentialDigits[i]);                        
+                }
+            }
+
+            return result;
+        }
+
         private List<int> GetSequentialDigits(int low, int high)
         {
             var result = new List<int>();
