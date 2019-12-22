@@ -42,27 +42,29 @@ namespace LC1291_SequentialDigits
         {
             var result = new List<int>();
 
-            var segments = GenerateSegements(low, high);
-
-            foreach (var segment in segments)
+            var numberOfDigitsLow = GetNumberOfDigits(low);
+            var numberOfDigitsHigh = GetNumberOfDigits(high);
+            var initial = low;
+            for (int i = numberOfDigitsLow; i <= numberOfDigitsHigh; i++)
             {
-                var baseValue = AdjustInitial(segment);
+                var adjustedBase = AdjustInitial(i, initial);
+                var upperBound = GetMaxForNumberOfDigits(i);
+                var max = Math.Min(high, upperBound);
+                var offSet = GetOffSetForNumberOfDigits(i);
 
-
-                while (baseValue <= segment.max)
+                while (adjustedBase <= max)
                 {
-                    result.Add(baseValue);
-                    baseValue += segment.offSet;
+                    result.Add(adjustedBase);
+                    adjustedBase += offSet;
                 }
             }
 
             return result;
         }
 
-        private int AdjustInitial((int initial, int max, int offSet) segment)
+        private int AdjustInitial(int numberOfDigits, int initial)
         {
-            var numberOfDigits = GetNumberOfDigits(segment.initial);
-            var mostSignificantDigit = GetMostSignificantDigit(segment.initial);
+            var mostSignificantDigit = GetMostSignificantDigit(initial);
             var adjustedInitial = mostSignificantDigit;
             var lastDigit = adjustedInitial;
             for (int i = 1; i < numberOfDigits; i++)
@@ -82,40 +84,6 @@ namespace LC1291_SequentialDigits
             }
 
             return result;
-        }
-
-        private List<(int initial, int max, int offSet)>  GenerateSegements(int low, int high)
-        {
-            var numberOfDigitsLow = GetNumberOfDigits(low);
-            var numberOfDigitsHigh = GetNumberOfDigits(high);
-
-            var segments = new List<(int initial, int max, int offSet)>();
-            for (int i = numberOfDigitsLow; i <= numberOfDigitsHigh; i++)
-            {
-                var offSet = GetOffSetForNumberOfDigits(i);
-                if (numberOfDigitsLow == numberOfDigitsHigh)
-                {
-                    segments.Add((low, high, offSet));
-                }
-                else if (i == numberOfDigitsLow)
-                {
-                    var max = GetMaxForNumberOfDigits(i);
-                    segments.Add((low, max, offSet));
-                }
-                else if (i == numberOfDigitsHigh)
-                {
-                    var min = Convert.ToInt32(Math.Pow(10, i - 1));
-                    segments.Add((min, high, offSet));
-                }
-                else
-                {
-                    var min = Convert.ToInt32(Math.Pow(10, i - 1));
-                    var max = GetMaxForNumberOfDigits(i);
-                    segments.Add((min, max, offSet));
-                }
-            }
-
-            return segments;
         }
 
         private int GetMaxForNumberOfDigits(int numberOfDigits)
