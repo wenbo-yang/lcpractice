@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B85C7DB-A1AC-46CD-9538-3C95ED5626EE}</ProjectGuid>
+    <ProjectGuid>{B8D54F26-5234-4BAB-A637-90B9E66B16C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC1292_MaximumSideLengthOfASquareWithSumLessOrEqualToTarget</RootNamespace>
-    <AssemblyName>LC1292_MaximumSideLengthOfASquareWithSumLessOrEqualToTarget</AssemblyName>
+    <RootNamespace>LC1291_SequentialDigits</RootNamespace>
+    <AssemblyName>LC1291_SequentialDigits</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,7 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MaximumSideLengthOfASquareWithSumLessOrEqualToTargetTests.cs" />
+    <Compile Include="SequentialDigitsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
