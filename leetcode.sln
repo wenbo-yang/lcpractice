@@ -491,6 +491,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC931_MinimumFallingPathSum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1288_RemoveCoveredIntervals", "LC1288_RemoveCoveredIntervals\LC1288_RemoveCoveredIntervals.csproj", "{A9BF542C-29C5-4229-9680-E982A0341815}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1287_ElementAppearingMoreThanQuarterInSortedArray", "LC1287_ElementAppearingMoreThanQuarterInSortedArray\LC1287_ElementAppearingMoreThanQuarterInSortedArray.csproj", "{1FA97ED8-6F22-4591-9A43-3871DD6DDD9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1286_IteratorForCombinations", "LC1286_IteratorForCombinations\LC1286_IteratorForCombinations.csproj", "{BA98A08F-C44F-4813-AA30-FBA87BF0A454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1473,6 +1477,14 @@ Global
 		{A9BF542C-29C5-4229-9680-E982A0341815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BF542C-29C5-4229-9680-E982A0341815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9BF542C-29C5-4229-9680-E982A0341815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA97ED8-6F22-4591-9A43-3871DD6DDD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA97ED8-6F22-4591-9A43-3871DD6DDD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA97ED8-6F22-4591-9A43-3871DD6DDD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA97ED8-6F22-4591-9A43-3871DD6DDD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA98A08F-C44F-4813-AA30-FBA87BF0A454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA98A08F-C44F-4813-AA30-FBA87BF0A454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA98A08F-C44F-4813-AA30-FBA87BF0A454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA98A08F-C44F-4813-AA30-FBA87BF0A454}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
