@@ -501,6 +501,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1284_MinimumNumberOfFlips
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1282_GroupPeopleWithGivenGroupSize", "LC1282_GroupPeopleWithGivenGroupSize\LC1282_GroupPeopleWithGivenGroupSize.csproj", "{8AE46383-D87B-4525-ABB4-F0E1D4456BC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1278_PalindromePartitioning", "LC1278_PalindromePartitioning\LC1278_PalindromePartitioning.csproj", "{10CCEF84-AE2F-4B76-B021-6323460BB483}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1503,6 +1505,10 @@ Global
 		{8AE46383-D87B-4525-ABB4-F0E1D4456BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE46383-D87B-4525-ABB4-F0E1D4456BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE46383-D87B-4525-ABB4-F0E1D4456BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CCEF84-AE2F-4B76-B021-6323460BB483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CCEF84-AE2F-4B76-B021-6323460BB483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CCEF84-AE2F-4B76-B021-6323460BB483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CCEF84-AE2F-4B76-B021-6323460BB483}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
