@@ -497,6 +497,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1286_IteratorForCombinati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1295_FindEvenNumberOfDigits", "LC1295_FindEvenNumberOfDigits\LC1295_FindEvenNumberOfDigits.csproj", "{2C87679A-8E31-4598-98C2-200C4A80DFCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1284_MinimumNumberOfFlips", "LC1284_MinimumNumberOfFlips\LC1284_MinimumNumberOfFlips.csproj", "{1BB4B018-5559-45E2-A093-B169BB5C80B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1491,6 +1493,10 @@ Global
 		{2C87679A-8E31-4598-98C2-200C4A80DFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C87679A-8E31-4598-98C2-200C4A80DFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C87679A-8E31-4598-98C2-200C4A80DFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB4B018-5559-45E2-A093-B169BB5C80B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB4B018-5559-45E2-A093-B169BB5C80B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB4B018-5559-45E2-A093-B169BB5C80B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB4B018-5559-45E2-A093-B169BB5C80B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
