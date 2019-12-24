@@ -29,44 +29,34 @@ namespace LC1282_GroupPeopleWithGivenGroupSize
 
         private List<List<int>> GroupPeople(int[] groupSizes)
         {
-            var table = new Dictionary<int, List<int>>();
+            var table = new Dictionary<int, List<List<int>>>();
             var result = new List<List<int>>();
             for (int i = 0; i < groupSizes.Length; i++)
             {
                 if (!table.ContainsKey(groupSizes[i]))
                 {
-                    table.Add(groupSizes[i], new List<int>());
+                    table.Add(groupSizes[i], new List<List<int>>());
+                    table[groupSizes[i]].Add(new List<int>());
                 }
 
-                table[groupSizes[i]].Add(i);
-            }
+                var last = table[groupSizes[i]].Count - 1;
+                var size = table[groupSizes[i]][last].Count;
 
+                if (size == groupSizes[i])
+                {
+                    last++;
+                    table[groupSizes[i]].Add(new List<int>());
+                }
+
+                table[groupSizes[i]][last].Add(i);
+            }
 
             foreach (var pair in table)
             {
-                var perGroup = GetGroupingPerTableEntry(pair.Key, pair.Value);
-                result.AddRange(perGroup);
+                result.AddRange(pair.Value);
             }
 
             return result;
-        }
-
-        private List<List<int>> GetGroupingPerTableEntry(int numPerGroup, List<int> memberIds)
-        {
-            var numberOfGroups = memberIds.Count / numPerGroup;
-
-            var result = new List<int>[numberOfGroups];
-            var index = 0;
-            for (int i = 0; i < numberOfGroups; i++)
-            {
-                result[i] = new List<int>();
-                while (result[i].Count != numPerGroup)
-                {
-                    result[i].Add(memberIds[index++]);        
-                }
-            }
-
-            return new List<List<int>>(result);
         }
     }
 }
