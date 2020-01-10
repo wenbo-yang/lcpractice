@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{028412A8-ABA1-48FF-8CC3-0BF91B1BF1CC}</ProjectGuid>
+    <ProjectGuid>{AC78DAE0-766C-4EC6-9D4F-5CEC8B7DCBB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC132_PalindromePartitioningII</RootNamespace>
-    <AssemblyName>LC132_PalindromePartitioningII</AssemblyName>
+    <RootNamespace>LC1267_CountConnectedServers</RootNamespace>
+    <AssemblyName>LC1267_CountConnectedServers</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,7 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PalidromePartitioningIITests.cs" />
+    <Compile Include="CountConnectedServersTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
