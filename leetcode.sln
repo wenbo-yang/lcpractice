@@ -535,6 +535,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1299_ReplaceElementsWithG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1300_OptimalSumOfAMutatedArray", "LC1300_OptimalSumOfAMutatedArray\LC1300_OptimalSumOfAMutatedArray.csproj", "{D58216A5-48EA-45D5-B1EA-EDCA6708EED7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1301_DeepestLeaveSum", "LC1301_DeepestLeaveSum\LC1301_DeepestLeaveSum.csproj", "{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1605,6 +1607,10 @@ Global
 		{D58216A5-48EA-45D5-B1EA-EDCA6708EED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D58216A5-48EA-45D5-B1EA-EDCA6708EED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D58216A5-48EA-45D5-B1EA-EDCA6708EED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
