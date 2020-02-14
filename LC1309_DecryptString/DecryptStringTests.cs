@@ -27,9 +27,7 @@ namespace LC1309_DecryptString
                 if (input[right] == '#')
                 {
                     right = right - 2;
-
                     var substring = input.Substring(right, 2);
-
                     decryptedChar = DecryptHelper(substring);
                 }
                 else
