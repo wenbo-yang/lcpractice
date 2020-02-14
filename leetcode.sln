@@ -537,6 +537,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1300_OptimalSumOfAMutated
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1301_DeepestLeaveSum", "LC1301_DeepestLeaveSum\LC1301_DeepestLeaveSum.csproj", "{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1309_DecryptString", "LC1309_DecryptString\LC1309_DecryptString.csproj", "{8D381841-2A2F-429F-8F12-D0BF0638962B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1611,6 +1613,10 @@ Global
 		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D237B171-2FDA-4BB8-BAA1-2D439C4ED4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
