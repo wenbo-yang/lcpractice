@@ -539,6 +539,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1301_DeepestLeaveSum", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1309_DecryptString", "LC1309_DecryptString\LC1309_DecryptString.csproj", "{8D381841-2A2F-429F-8F12-D0BF0638962B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1312_MinimumInsertionsStepsToMakeAStringPalindrome", "LC1312_MinimumInsertionsStepsToMakeAStringPalindrome\LC1312_MinimumInsertionsStepsToMakeAStringPalindrome.csproj", "{A2E86C04-21D5-4CE7-BB8B-9F2E28E4AB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1315_SumOfNodesInEvenValuedGrandParent", "LC1315_SumOfNodesInEvenValuedGrandParent\LC1315_SumOfNodesInEvenValuedGrandParent.csproj", "{EF2CD82E-DFD9-45CB-BE3D-E7B8C09317B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1617,6 +1621,14 @@ Global
 		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D381841-2A2F-429F-8F12-D0BF0638962B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E86C04-21D5-4CE7-BB8B-9F2E28E4AB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E86C04-21D5-4CE7-BB8B-9F2E28E4AB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E86C04-21D5-4CE7-BB8B-9F2E28E4AB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E86C04-21D5-4CE7-BB8B-9F2E28E4AB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF2CD82E-DFD9-45CB-BE3D-E7B8C09317B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2CD82E-DFD9-45CB-BE3D-E7B8C09317B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2CD82E-DFD9-45CB-BE3D-E7B8C09317B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2CD82E-DFD9-45CB-BE3D-E7B8C09317B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
