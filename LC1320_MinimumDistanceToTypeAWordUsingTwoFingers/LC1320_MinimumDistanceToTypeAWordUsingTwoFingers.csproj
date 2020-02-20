@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2DCD7765-28F1-469D-8353-12F708A62888}</ProjectGuid>
+    <ProjectGuid>{031638CF-490E-46BB-AD09-DE57B14F2085}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC1319_NumberOfOperationsToConnectAll</RootNamespace>
-    <AssemblyName>LC1319_NumberOfOperationsToConnectAll</AssemblyName>
+    <RootNamespace>LC1320_MinimumDistanceToTypeAWordUsingTwoFingers</RootNamespace>
+    <AssemblyName>LC1320_MinimumDistanceToTypeAWordUsingTwoFingers</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -47,9 +47,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberOfOperationsToConnectAllTests.cs" />
+    <Compile Include="MinimumDistanceToTypeAWordUsingTwoFingers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
