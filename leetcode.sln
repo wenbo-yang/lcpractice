@@ -549,6 +549,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1319_NumberOfOperationsTo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1320_MinimumDistanceToTypeAWordUsingTwoFingers", "LC1320_MinimumDistanceToTypeAWordUsingTwoFingers\LC1320_MinimumDistanceToTypeAWordUsingTwoFingers.csproj", "{031638CF-490E-46BB-AD09-DE57B14F2085}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1324_PrintWordVertically", "LC1324_PrintWordVertically\LC1324_PrintWordVertically.csproj", "{89A0BEF6-8B8D-473B-9425-685C34EA3E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1647,6 +1649,10 @@ Global
 		{031638CF-490E-46BB-AD09-DE57B14F2085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031638CF-490E-46BB-AD09-DE57B14F2085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{031638CF-490E-46BB-AD09-DE57B14F2085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
