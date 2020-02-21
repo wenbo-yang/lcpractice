@@ -551,6 +551,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1320_MinimumDistanceToTyp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1324_PrintWordVertically", "LC1324_PrintWordVertically\LC1324_PrintWordVertically.csproj", "{89A0BEF6-8B8D-473B-9425-685C34EA3E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1325_DeleteLeavesWithAGivenValue", "LC1325_DeleteLeavesWithAGivenValue\LC1325_DeleteLeavesWithAGivenValue.csproj", "{EC18380F-BF23-431C-8E7B-3A38C2C6250A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1653,6 +1655,10 @@ Global
 		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A0BEF6-8B8D-473B-9425-685C34EA3E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
