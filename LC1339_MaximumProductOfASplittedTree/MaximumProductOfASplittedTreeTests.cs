@@ -2,7 +2,7 @@
 using CommonUtilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LC1343_MaximumProductOfASplittedTree
+namespace LC1339_MaximumProductOfASplittedTree
 {
     [TestClass]
     public class MaximumProductOfASplittedTreeTests
