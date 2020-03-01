@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29609.76
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC2_AddTwoNumbers", "lc2_addtwonumbers\LC2_AddTwoNumbers.csproj", "{20D698FF-14D8-48EE-8099-56119D99D693}"
 EndProject
@@ -552,6 +552,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1324_PrintWordVertically", "LC1324_PrintWordVertically\LC1324_PrintWordVertically.csproj", "{89A0BEF6-8B8D-473B-9425-685C34EA3E00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1325_DeleteLeavesWithAGivenValue", "LC1325_DeleteLeavesWithAGivenValue\LC1325_DeleteLeavesWithAGivenValue.csproj", "{EC18380F-BF23-431C-8E7B-3A38C2C6250A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC856_BalancedParentheses", "LC856_BalancedParentheses\LC856_BalancedParentheses.csproj", "{91B80BE2-0185-43B5-900C-F3174604A47C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1603,6 +1605,7 @@ Global
 		{5AA4B696-F250-489C-AF62-3D35DA8F8B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA4B696-F250-489C-AF62-3D35DA8F8B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA4B696-F250-489C-AF62-3D35DA8F8B70}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 		{277A20F9-6DB0-42B7-91E6-1631775CD5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{277A20F9-6DB0-42B7-91E6-1631775CD5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{277A20F9-6DB0-42B7-91E6-1631775CD5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -1659,6 +1662,12 @@ Global
 		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC18380F-BF23-431C-8E7B-3A38C2C6250A}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{91B80BE2-0185-43B5-900C-F3174604A47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B80BE2-0185-43B5-900C-F3174604A47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B80BE2-0185-43B5-900C-F3174604A47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B80BE2-0185-43B5-900C-F3174604A47C}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
