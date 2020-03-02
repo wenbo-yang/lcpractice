@@ -555,7 +555,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1325_DeleteLeavesWithAGiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC856_BalancedParentheses", "LC856_BalancedParentheses\LC856_BalancedParentheses.csproj", "{91B80BE2-0185-43B5-900C-F3174604A47C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1343_MaximumProductOfASplittedTree", "LC1343_MaximumProductOfASplittedTree\LC1343_MaximumProductOfASplittedTree.csproj", "{18CB3043-BE80-4E25-A1CF-A9550C2C8FC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1339_MaximumProductOfASplittedTree", "LC1339_MaximumProductOfASplittedTree\LC1339_MaximumProductOfASplittedTree.csproj", "{18CB3043-BE80-4E25-A1CF-A9550C2C8FC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
