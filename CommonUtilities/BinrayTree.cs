@@ -77,6 +77,11 @@ namespace CommonUtilities
             };
         }
 
+        public static BinaryTreeNode CreateBinaryTreeFromNodeArrays(int numberOfNodes, int[] leftChild, int[] rightChild)
+        {
+            throw new NotImplementedException();
+        }
+
         private static BinaryTreeNode CreatePreOrder(string[] input, ref int index)
         {
             if (index >= input.Length || input[index] == null)

@@ -1,13 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LC904_FruitIntoBaskets
+namespace LC899_OrderlyQueue
 {
     [TestClass]
-    public class UnitTest1
+    public class OrderlyQueueTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GivenOrderlyQueue()
         {
         }
     }
