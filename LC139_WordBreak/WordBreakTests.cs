@@ -103,8 +103,6 @@ namespace LC139_WordBreak
             return dp[dp.Length - 1];
         }
 
-
-
         private bool WorkBreakSearch(string target, HashSet<string> set)
         {
             return WorkBreakSearchHelper(target, 0, set);

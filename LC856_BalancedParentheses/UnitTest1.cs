@@ -38,12 +38,7 @@ namespace LC856_BalancedParentheses
 
         private int GetScoreHelper(string s, int startIndex, SortedDictionary<int, int> openClosePair)
         {
-            if (startIndex == s.Length)
-            {
-                return 0;
-            }
-
-
+            return 0;
         }
     }
 }
