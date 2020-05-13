@@ -44,6 +44,7 @@ namespace LC460_LFUCache
                     _cache.Remove(node.Value);
                     _list.RemoveLast();
                 }
+
                 if (!_cache.ContainsKey(key))
                 {
                     _cache.Add(key, 0);
