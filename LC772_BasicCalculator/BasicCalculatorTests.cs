@@ -17,6 +17,16 @@ namespace LC772_BasicCalculator
             Assert.IsTrue(result == 2);
         }
 
+        [TestMethod]
+        public void GivenAnotherBasicExpressionString_Calculate_ShouldReturnCorrectResult()
+        {
+            var input = "2*(1+1)";
+
+            var result = Calculate(input);
+
+            Assert.IsTrue(result == 4);
+        }
+
         private int Calculate(string input)
         {
             return CalculateHelper(input.Replace(" ", ""));
