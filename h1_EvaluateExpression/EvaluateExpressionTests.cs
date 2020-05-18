@@ -15,7 +15,7 @@ namespace h1_EvaluateExpression
 
             var result = EvaluateExpression(s);
 
-            Assert.IsTrue(result);
+            Assert.IsFalse(result);
         }
 
         [TestMethod]
@@ -59,18 +59,10 @@ namespace h1_EvaluateExpression
         private LinkedListNode<char> ReplaceLinkedListWithEvaluatedResult(LinkedListNode<char> start, LinkedListNode<char> end, LinkedList<char> list)
         {
             var op = start.Previous;
-            var result = ' ';
-            if (op == list.First && end == list.Last)
-            {
-                result = EvaluateListExpression(list.First, list.Last);
-                list = new LinkedList<char>();
-                list.AddFirst(result);
-                return list.First;
-            }
 
             var prev = op.Previous;
-            
-            result = EvaluateListExpression(op, end);
+
+            var result = EvaluateBasicListExpression(op, end);
             while (end != prev)
             {
                 var tempEnd = end.Previous;
@@ -78,6 +70,12 @@ namespace h1_EvaluateExpression
                 end = tempEnd;
             }
 
+            if (list.Count == 0)
+            {
+                list.AddFirst(result);
+                return list.First;
+            }
+            
             list.AddAfter(prev, result);
 
             return prev.Next;
@@ -95,7 +93,7 @@ namespace h1_EvaluateExpression
             return list;
         }
 
-        private char EvaluateListExpression(LinkedListNode<char> head, LinkedListNode<char> tail)
+        private char EvaluateBasicListExpression(LinkedListNode<char> head, LinkedListNode<char> tail)
         {
             if (head.Value == '!')
             {
