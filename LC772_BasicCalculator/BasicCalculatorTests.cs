@@ -29,100 +29,142 @@ namespace LC772_BasicCalculator
 
         private int Calculate(string input)
         {
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                throw new Exception("exception");
+            }
+
             return CalculateHelper(input.Replace(" ", ""));
         }
 
         private int CalculateHelper(string input)
         {
-            var left = "";
-            var right = "";
-            var operatorIndex = -1;
-            var rightIndex = 0;
-            if (input.StartsWith("("))
-            {
-                var closing = FindCorrespondingClosing(input);
+            var list = ConvertInputIntoLinkedList(input);
 
-                if (closing == -1)
-                {
-                    throw new Exception("should not happen");
-                }
+            CalculateAllValuesInBracket(list);
 
-                left = input.Substring(1, closing - 1);
-                rightIndex = closing + 1;
-            }
-            else
-            {
-                operatorIndex = FindFirstOperatorIndex(input, 0);
-
-                left = input.Substring(0, operatorIndex);
-
-                rightIndex = operatorIndex;
-            }
-
-            if (rightIndex >= input.Length)
-            {
-                return Convert.ToInt32(left);
-            }
-
-            operatorIndex = FindFirstOperatorIndex(input, rightIndex);
-
-            right = input.Substring(operatorIndex + 1);
-            
-            return CalculateBasicExpression(CalculateHelper(left), CalculateHelper(right), input[operatorIndex].ToString());
+            return EvaluateExpressionNoBracketInTheMiddle(list, list.First, list.Last);
         }
 
-        private int FindFirstOperatorIndex(string input, int startIndex)
+        private void CalculateAllValuesInBracket(LinkedList<(char symbol, int number)> list)
         {
-            for (int i = startIndex; i < input.Length; i++)
+            var stack = new Stack<LinkedListNode<(char symbol, int number)>>();
+
+            var head = list.First;
+
+            while (head != null)
             {
-                var c = input[i];
-                if (c == '*' || c == '/' || c == '-' || c == '+')
+                if (head.Value.symbol == '(')
                 {
-                    return i;
+                    stack.Push(head);
                 }
+                else if (head.Value.symbol == ')')
+                {
+                    var open = stack.Pop();
+                    var close = head;
+
+                    var result = EvaluateExpressionNoBracketInTheMiddle(list, open, close);
+
+                    head = ReplaceExpressionWithValue(list, open, close, result);
+                }
+
+                head = head.Next;
             }
 
-            return input.Length;
         }
 
-        private int FindCorrespondingClosing(string input)
+        private int EvaluateExpressionNoBracketInTheMiddle(LinkedList<(char symbol, int number)> list, LinkedListNode<(char symbol, int number)> first, LinkedListNode<(char symbol, int number)> last)
         {
-            var stack = new Stack<char>();
-            stack.Push(input[0]);
-            for (int i = 1; i < input.Length; i++)
+            if (first == last)
             {
-                if (input[i] == '(')
-                {
-                    stack.Push(input[i]);
-                }
-                else if (input[i] == ')')
-                {
-                    stack.Pop();
-                }
-
-                if (stack.Count == 0)
-                {
-                    return i;
-                }
+                return first.Value.number;
             }
 
-            return -1;
+            if (first.Next.Next == last)
+            {
+                return EvaluateBasicExpression(first, last);
+            }
+
+            if (first.Value.symbol == '(')
+            {
+                first = first.Next;
+                last = last.Previous;
+            }
+
+            list.AddBefore(first, ('s', -1));
+            list.AddAfter(last, ('e', -1));
+
+            var start = first.Previous;
+            var end = last.Next;
+
+            var head = first;
+            while (head != end)
+            {
+                if (head.Value.symbol == '*' || head.Value.symbol == '/')
+                {
+                    var result = EvaluateBasicExpression(head.Previous, head.Next);
+                    head = ReplaceExpressionWithValue(list, head.Previous, head.Next, result);
+                }
+
+                head = head.Next;
+            }
+
+            head = start.Next;
+
+            while (head != end)
+            {
+                if (head.Value.symbol == '+' || head.Value.symbol == '/')
+                {
+                    var result = EvaluateBasicExpression(head.Previous, head.Next);
+                    head = ReplaceExpressionWithValue(list, head.Previous, head.Next, result);
+                }
+
+                head = head.Next;
+            }
+
+            head = start.Next;
+
+            list.Remove(start); list.Remove(end);
+
+            return head.Value.number;
         }
 
-        private int CalculateBasicExpression(int left, int right, string operation)
+        private LinkedListNode<(char symbol, int number)> ReplaceExpressionWithValue(LinkedList<(char symbol, int number)> list, LinkedListNode<(char symbol, int number)> open, LinkedListNode<(char symbol, int number)> close, int result)
         {
+            list.AddAfter(close, (' ', result));
+            var newHead = open.Previous;
+            while (close != newHead)
+            {
+                var prev = close.Previous;
+                list.Remove(close);
+                close = prev;
+            }
+
+            return newHead.Next;
+        }
+
+        private int EvaluateBasicExpression(LinkedListNode<(char symbol, int number)> first, LinkedListNode<(char symbol, int number)> last)
+        {
+            if (first.Value.symbol == '(')
+            {
+                return first.Next.Value.number;
+            }
+
+            var left = first.Value.number;
+            var right = last.Value.number;
+            var operation = first.Next.Value.symbol;
             switch (operation)
             {
-                case "+":
+                case '+':
                     return left + right;
 
-                case "-":
+                case '-':
                     return left - right;
 
-                case "*":
+                case '*':
                     return left * right;
 
-                case "/":
+                case '/':
                     return left / right;
 
                 default:
@@ -130,11 +172,38 @@ namespace LC772_BasicCalculator
             }
         }
 
-        private class BasicExpression
+        private LinkedList<(char symbol, int number)> ConvertInputIntoLinkedList(string s)
         {
-            public int left;
-            public int right;
-            public char operation;
+            var linkedList = new LinkedList<(char symbol, int number)>();
+
+            for (int i = 0; i < s.Length; )
+            {
+                if (IsOperatorOrBracket(s[i]))
+                {
+                    linkedList.AddLast((s[i], -1));
+                    i++;
+                }
+                else
+                {
+                    var number = 0;
+                    while (!IsOperatorOrBracket(s[i]))
+                    {
+                        number *= 10;
+                        number += s[i] - '0';
+                        i++;
+                    }
+
+                    linkedList.AddLast((' ', number));
+                }
+            }
+
+            return linkedList;
+        }
+
+        private bool IsOperatorOrBracket(char c)
+        {
+            var value = c - '0';
+            return !(value >= 0 && value <= 9);
         }
     }
 }

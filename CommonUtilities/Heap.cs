@@ -33,6 +33,11 @@ namespace CommonUtilities
             return retVal;
         }
 
+        public List<T> ToList()
+        {
+            return _heap;
+        }
+
         // assume this is o(1) search and o(logk) removal
         public void Remove(T target)
         {
@@ -107,7 +112,6 @@ namespace CommonUtilities
                 var index = current;
                 if (left < Count && right < Count)
                 {
-                    
                     index = Comparer<T>.Default.Compare(_heap[left], _heap[right]) < 0 ? left : right;
                 }
                 else if (right >= Count)
