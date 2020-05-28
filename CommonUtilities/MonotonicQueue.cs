@@ -1,43 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace CommonUtilities
 {
-    public class MonotonicQueue
-    {
-        private LinkedList<int> list = new LinkedList<int>();
 
-        public void Push(int value)
+    public abstract class MonotonicQueue
+    {
+        protected LinkedList<int> _list = new LinkedList<int>();
+
+        public abstract void Push(int value);
+        
+        public int Pop()
+        {
+            var value = _list.First.Value;
+            _list.RemoveFirst();
+            return value;
+        }
+
+        public int Peek()
+        {
+            return _list.First.Value;
+        }
+
+        public int Last()
+        {
+            return _list.Last.Value;
+        }
+
+        public int Count => _list.Count;
+
+        public void Clear()
+        {
+            _list = null;
+            _list = new LinkedList<int>();
+        }
+    }
+
+
+    public class MonotonicIncreasingQueue : MonotonicQueue
+    {
+        public override void Push(int value)
         {
             if (Count > 0 && Peek() < value)
             {
                 Clear();
             }
 
-            list.AddLast(value);
+            _list.AddLast(value);    
         }
+    }
 
-        public int Pop()
+    public class MonotonicDecreasingQueue : MonotonicQueue
+    {
+        public override void Push(int value)
         {
-            var value = list.First.Value;
-            list.RemoveFirst();
-            return value;
-        }
+            if (Count > 0 && Peek() > value)
+            {
+                Clear();
+            }
 
-        public int Peek()
-        {
-            return list.First.Value;
-        }
-
-        public int Count => list.Count;
-
-        public void Clear()
-        {
-            list = null;
-            list = new LinkedList<int>();
+            _list.AddLast(value);
         }
     }
 }
