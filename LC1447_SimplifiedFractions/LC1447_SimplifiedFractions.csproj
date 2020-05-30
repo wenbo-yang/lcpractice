@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBCB2DF-E6FF-40DC-A5C4-1683FFFD201B}</ProjectGuid>
+    <ProjectGuid>{12B33BF4-3F0F-458E-94B6-444289D92F28}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC1437_CheckToSeeIfAll1sAreOfKLengthAway</RootNamespace>
-    <AssemblyName>LC1437_CheckToSeeIfAll1sAreOfKLengthAway</AssemblyName>
+    <RootNamespace>LC1447_SimplifiedFractions</RootNamespace>
+    <AssemblyName>LC1447_SimplifiedFractions</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckToSeeIfAll1sAreOfKLengthAwayTests.cs" />
+    <Compile Include="SimplifiedFractionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

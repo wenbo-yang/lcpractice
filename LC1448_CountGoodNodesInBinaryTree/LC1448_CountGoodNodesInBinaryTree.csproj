@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBCB2DF-E6FF-40DC-A5C4-1683FFFD201B}</ProjectGuid>
+    <ProjectGuid>{CED97D37-4E76-4206-BB89-E2E25F8DAC2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC1437_CheckToSeeIfAll1sAreOfKLengthAway</RootNamespace>
-    <AssemblyName>LC1437_CheckToSeeIfAll1sAreOfKLengthAway</AssemblyName>
+    <RootNamespace>LC1448_CountGoodNodesInBinaryTree</RootNamespace>
+    <AssemblyName>LC1448_CountGoodNodesInBinaryTree</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,11 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckToSeeIfAll1sAreOfKLengthAwayTests.cs" />
+    <Compile Include="CountGoodNodesInBinaryTreeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtilities\CommonUtilities.csproj">
+      <Project>{393708db-e199-4a6c-a163-b39f911ece8f}</Project>
+      <Name>CommonUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
