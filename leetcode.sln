@@ -749,6 +749,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1450_NumberOfStudents", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1451_RearrangeWords", "LC1451_RearrangeWords\LC1451_RearrangeWords.csproj", "{DC7C8E09-A03D-4F72-8DB0-D6F4291066EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1452_SubsetLists", "LC1452_SubsetLists\LC1452_SubsetLists.csproj", "{2DB7D4E9-A20E-4975-88D6-5AFA07FA962B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1453_CircleOfRadiusRContainingMostPoints", "LC1453_CircleOfRadiusRContainingMostPoints\LC1453_CircleOfRadiusRContainingMostPoints.csproj", "{AF0A4ACE-D621-4ED9-9B4D-D8481CEB12CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1455_PrefixCheck", "LC1455_PrefixCheck\LC1455_PrefixCheck.csproj", "{737C73CE-AD81-4518-9713-00A6EBA834DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1457_MaximumNumberOfVowelsInASubstringOfLengthK", "LC1457_MaximumNumberOfVowelsInASubstringOfLengthK\LC1457_MaximumNumberOfVowelsInASubstringOfLengthK.csproj", "{8C64A224-3ADD-4C3B-A4E2-795F1CAF152E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1458_MaxDotProductOfSubsequence", "LC1458_MaxDotProductOfSubsequence\LC1458_MaxDotProductOfSubsequence.csproj", "{F998CB23-346E-43DB-96D3-3BBA885DECA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1460_MakeTwoArraysEqualToReverseSubarrays", "LC1460_MakeTwoArraysEqualToReverseSubarrays\LC1460_MakeTwoArraysEqualToReverseSubarrays.csproj", "{C5A6EE12-FC73-484E-9DB7-1C18EB61A16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2247,6 +2259,30 @@ Global
 		{DC7C8E09-A03D-4F72-8DB0-D6F4291066EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC7C8E09-A03D-4F72-8DB0-D6F4291066EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC7C8E09-A03D-4F72-8DB0-D6F4291066EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB7D4E9-A20E-4975-88D6-5AFA07FA962B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB7D4E9-A20E-4975-88D6-5AFA07FA962B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB7D4E9-A20E-4975-88D6-5AFA07FA962B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB7D4E9-A20E-4975-88D6-5AFA07FA962B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0A4ACE-D621-4ED9-9B4D-D8481CEB12CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0A4ACE-D621-4ED9-9B4D-D8481CEB12CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0A4ACE-D621-4ED9-9B4D-D8481CEB12CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0A4ACE-D621-4ED9-9B4D-D8481CEB12CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737C73CE-AD81-4518-9713-00A6EBA834DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737C73CE-AD81-4518-9713-00A6EBA834DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737C73CE-AD81-4518-9713-00A6EBA834DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737C73CE-AD81-4518-9713-00A6EBA834DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C64A224-3ADD-4C3B-A4E2-795F1CAF152E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C64A224-3ADD-4C3B-A4E2-795F1CAF152E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C64A224-3ADD-4C3B-A4E2-795F1CAF152E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C64A224-3ADD-4C3B-A4E2-795F1CAF152E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F998CB23-346E-43DB-96D3-3BBA885DECA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F998CB23-346E-43DB-96D3-3BBA885DECA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F998CB23-346E-43DB-96D3-3BBA885DECA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F998CB23-346E-43DB-96D3-3BBA885DECA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A6EE12-FC73-484E-9DB7-1C18EB61A16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A6EE12-FC73-484E-9DB7-1C18EB61A16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A6EE12-FC73-484E-9DB7-1C18EB61A16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A6EE12-FC73-484E-9DB7-1C18EB61A16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
