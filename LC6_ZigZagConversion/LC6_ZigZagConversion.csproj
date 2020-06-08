@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5A90269-C21A-4298-9213-C6D17E5A7056}</ProjectGuid>
+    <ProjectGuid>{9DAC6C39-5FCD-414B-B289-823EC001A67F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC1306_JumpGame</RootNamespace>
-    <AssemblyName>LC1306_JumpGame</AssemblyName>
+    <RootNamespace>LC6_ZigZagConversion</RootNamespace>
+    <AssemblyName>LC6_ZigZagConversion</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,7 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JumpGameTests.cs" />
+    <Compile Include="ZigZagConversionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

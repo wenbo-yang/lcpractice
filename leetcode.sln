@@ -775,6 +775,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1304_FindNUniqueIntegersS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1305_SortedArrayByBinarySearchTree", "LC1305_SortedArrayByBinarySearchTree\LC1305_SortedArrayByBinarySearchTree.csproj", "{9396CD4D-C9A9-495F-99CE-8EC617FC5521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1306_JumpGame", "LC1306_JumpGame\LC1306_JumpGame.csproj", "{B5A90269-C21A-4298-9213-C6D17E5A7056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1307_VerbalArithmeticPuzzle", "LC1307_VerbalArithmeticPuzzle\LC1307_VerbalArithmeticPuzzle.csproj", "{BBF96026-7E73-470D-9DC3-065B4469DA5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC1310_XORQueriesOfSubarray", "LC1310_XORQueriesOfSubarray\LC1310_XORQueriesOfSubarray.csproj", "{93D84E3C-593E-4841-8BD2-6576EE42FAB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC6_ZigZagConversion", "LC6_ZigZagConversion\LC6_ZigZagConversion.csproj", "{9DAC6C39-5FCD-414B-B289-823EC001A67F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC934_ShortestBridge", "LC934_ShortestBridge\LC934_ShortestBridge.csproj", "{83D41C25-A60B-477A-8FBC-A2A4214B3BF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2325,6 +2335,26 @@ Global
 		{9396CD4D-C9A9-495F-99CE-8EC617FC5521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9396CD4D-C9A9-495F-99CE-8EC617FC5521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9396CD4D-C9A9-495F-99CE-8EC617FC5521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A90269-C21A-4298-9213-C6D17E5A7056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A90269-C21A-4298-9213-C6D17E5A7056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A90269-C21A-4298-9213-C6D17E5A7056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A90269-C21A-4298-9213-C6D17E5A7056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF96026-7E73-470D-9DC3-065B4469DA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF96026-7E73-470D-9DC3-065B4469DA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF96026-7E73-470D-9DC3-065B4469DA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF96026-7E73-470D-9DC3-065B4469DA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D84E3C-593E-4841-8BD2-6576EE42FAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D84E3C-593E-4841-8BD2-6576EE42FAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D84E3C-593E-4841-8BD2-6576EE42FAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D84E3C-593E-4841-8BD2-6576EE42FAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAC6C39-5FCD-414B-B289-823EC001A67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAC6C39-5FCD-414B-B289-823EC001A67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAC6C39-5FCD-414B-B289-823EC001A67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAC6C39-5FCD-414B-B289-823EC001A67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D41C25-A60B-477A-8FBC-A2A4214B3BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D41C25-A60B-477A-8FBC-A2A4214B3BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D41C25-A60B-477A-8FBC-A2A4214B3BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D41C25-A60B-477A-8FBC-A2A4214B3BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
