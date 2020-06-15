@@ -100,7 +100,6 @@ namespace h1_EvaluateExpression
                 return head.Next.Next.Value == 't' ? 'f' : 't';
             }
 
-
             var left = head.Next.Next.Value == 't' ? true : false;
             var right = tail.Previous.Value == 't' ? true : false;
 
