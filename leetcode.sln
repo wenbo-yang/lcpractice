@@ -799,6 +799,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC29_DivideTwoIntegers", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC36_ValidSudoku", "LC36_ValidSudoku\LC36_ValidSudoku.csproj", "{55EC0442-65DE-4E39-AB43-D40AE269B6A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC37_SudokuSolver", "LC37_SudokuSolver\LC37_SudokuSolver.csproj", "{2797F05F-7443-44F4-B4DF-6F00335B972B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC38_CountAndSaySequence", "LC38_CountAndSaySequence\LC38_CountAndSaySequence.csproj", "{F0946AAF-AAC4-48BB-A56C-43846B330823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC43_MultiplyStrings", "LC43_MultiplyStrings\LC43_MultiplyStrings.csproj", "{F4A91A18-7B16-4105-9BF5-A8407C7A1059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC48_RotateImages", "LC48_RotateImages\LC48_RotateImages.csproj", "{BF2667FB-C2B8-4CD9-A06B-1A1EF6DE02B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2397,6 +2405,22 @@ Global
 		{55EC0442-65DE-4E39-AB43-D40AE269B6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55EC0442-65DE-4E39-AB43-D40AE269B6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55EC0442-65DE-4E39-AB43-D40AE269B6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2797F05F-7443-44F4-B4DF-6F00335B972B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2797F05F-7443-44F4-B4DF-6F00335B972B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2797F05F-7443-44F4-B4DF-6F00335B972B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2797F05F-7443-44F4-B4DF-6F00335B972B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0946AAF-AAC4-48BB-A56C-43846B330823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0946AAF-AAC4-48BB-A56C-43846B330823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0946AAF-AAC4-48BB-A56C-43846B330823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0946AAF-AAC4-48BB-A56C-43846B330823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A91A18-7B16-4105-9BF5-A8407C7A1059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A91A18-7B16-4105-9BF5-A8407C7A1059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A91A18-7B16-4105-9BF5-A8407C7A1059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A91A18-7B16-4105-9BF5-A8407C7A1059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2667FB-C2B8-4CD9-A06B-1A1EF6DE02B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2667FB-C2B8-4CD9-A06B-1A1EF6DE02B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2667FB-C2B8-4CD9-A06B-1A1EF6DE02B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2667FB-C2B8-4CD9-A06B-1A1EF6DE02B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
