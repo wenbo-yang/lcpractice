@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB58E162-2436-49EF-A5B2-1921C50AE9B8}</ProjectGuid>
+    <ProjectGuid>{18264B82-36C5-4313-8E70-B37355F0C730}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LC69_Sqrt</RootNamespace>
-    <AssemblyName>LC69_Sqrt</AssemblyName>
+    <RootNamespace>LC82_RemoveDuplicatesFromSortedList</RootNamespace>
+    <AssemblyName>LC82_RemoveDuplicatesFromSortedList</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,11 +49,17 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SqrtTests.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedListTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtilities\CommonUtilities.csproj">
+      <Project>{393708DB-E199-4A6C-A163-B39F911ECE8F}</Project>
+      <Name>CommonUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
