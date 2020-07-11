@@ -835,6 +835,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC82_RemoveDuplicatesFromSo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC83_RemoveDuplicatesFromSortedList", "LC83_RemoveDuplicatesFromSortedList\LC83_RemoveDuplicatesFromSortedList.csproj", "{5023B15B-0565-4EED-8CC5-8AA5F5A0AC3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC86_PartitionList", "LC86_PartitionList\LC86_PartitionList.csproj", "{6909390C-6585-4F31-9919-09D2306BD388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC87_ScrambleString", "LC87_ScrambleString\LC87_ScrambleString.csproj", "{581CACF3-FA50-4EF0-A9A3-C007E823C881}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2505,6 +2509,14 @@ Global
 		{5023B15B-0565-4EED-8CC5-8AA5F5A0AC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5023B15B-0565-4EED-8CC5-8AA5F5A0AC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5023B15B-0565-4EED-8CC5-8AA5F5A0AC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6909390C-6585-4F31-9919-09D2306BD388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6909390C-6585-4F31-9919-09D2306BD388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6909390C-6585-4F31-9919-09D2306BD388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6909390C-6585-4F31-9919-09D2306BD388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
