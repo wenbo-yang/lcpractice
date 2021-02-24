@@ -839,6 +839,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC86_PartitionList", "LC86_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC87_ScrambleString", "LC87_ScrambleString\LC87_ScrambleString.csproj", "{581CACF3-FA50-4EF0-A9A3-C007E823C881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC89_GrayCode", "LC89_GrayCode\LC89_GrayCode.csproj", "{564D0FAA-2B0D-48B7-859E-0F65B4E9BD7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -2517,6 +2519,10 @@ Global
 		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581CACF3-FA50-4EF0-A9A3-C007E823C881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564D0FAA-2B0D-48B7-859E-0F65B4E9BD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564D0FAA-2B0D-48B7-859E-0F65B4E9BD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564D0FAA-2B0D-48B7-859E-0F65B4E9BD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564D0FAA-2B0D-48B7-859E-0F65B4E9BD7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

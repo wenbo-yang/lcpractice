@@ -28,6 +28,16 @@ namespace h1_EvaluateExpression
             Assert.IsFalse(result);
         }
 
+        [TestMethod]
+        public void GivenSimpleExpression_EvaluateExpression_ShouldReturnFalse()
+        {
+            var s = "t";
+
+            var result = EvaluateExpression(s);
+
+            Assert.IsTrue(result);
+        }
+
         private bool EvaluateExpression(string s)
         {
             var list = ConstructListFromString(s);
