@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LC394_DecodeString
@@ -19,47 +20,114 @@ namespace LC394_DecodeString
 
         private string DecodeString(string input)
         {
-            var result = new List<char>();
 
-            DecodeStringHelper(input, 0, input.Length - 1, result);
+            var list = ConvertStringToLinkedList(input);
 
-            return new string(result.ToArray());    
+            DecodeStringHelper(list.First, list.Last);
+
+            return ConvertLinkedListToString(list);
         }
 
-        private void DecodeStringHelper(string input, int start, int end, List<char> result)
+        private LinkedListNode<char> DecodeStringHelper(LinkedListNode<char> first, LinkedListNode<char> last)
         {
-            for (int i = start; i <= end; i++)
+            
+            while (first != last)
             {
-                if (input[i] >= 'a' && input[i] <= 'z')
+                while(isChar(first.Value))
                 {
-                    result.Add(input[i]);
+                    first = first.Next;
                 }
-                else if (input[i] >= '0' && input[i] <= '9')
+
+                if (isNumber(first.Value))
                 {
-                    var openBracketIndex = input.IndexOf('[', i);
-                    var closeBracketIndex = input.IndexOf(']', openBracketIndex);
-                    var numberString = input.Substring(i, openBracketIndex - i);
-                    var shouldRepeatNTimes = Convert.ToInt32(numberString);
-                    var tempResult = new List<char>();
-                    DecodeStringHelper(input, openBracketIndex + 1, closeBracketIndex - 1, tempResult);
-                    result.AddRange(RepeatNTimes(tempResult, shouldRepeatNTimes));
-                    i = closeBracketIndex;
+                    var tempNumber = first;
+                    var num = 0;
+                    while (isNumber(tempNumber.Value))
+                    {
+                        num *= 10;
+                        num = tempNumber.Value - '0';
+
+                        tempNumber = tempNumber.Next;
+                    }
+
+                    var bracket = tempNumber;
+                    var stack = new Stack<LinkedListNode<char>>();
+                    do
+                    {
+                        if (isOpenBracket(bracket.Value))
+                        {
+                            stack.Push(bracket);
+                        }
+
+                        if (isCloseBracket(bracket.Value))
+                        {
+                            var openBracketNode = stack.Pop();
+                            DecodeStringHelper(openBracketNode.Next, bracket.Previous);
+                        }
+
+                        bracket = bracket.Next;
+                    }
+                    while (stack.Count != 0);
+
+                    RepeatNTimes(num, first, bracket.Previous);
                 }
             }
+
+            return last;
         }
 
-        private List<char> RepeatNTimes(List<char> chars, int n)        {
-            var result = new List<char>();
+        private void RepeatNTimes(int num, LinkedListNode<char> first, LinkedListNode<char> previous)
+        {
+            throw new NotImplementedException();
+        }
 
-            for (int i = 0; i < n; i++)
+        private bool isCloseBracket(char value)
+        {
+            return value == ']';
+        }
+
+        private bool isOpenBracket(char value)
+        {
+            return value == '[';
+        }
+
+        private bool isNumber(char value)
+        {
+            return value >= '0' && value <= '9';
+
+        }
+
+        private bool isChar(char value)
+        {
+            return value >= 'a' && value <= 'z';
+        }
+
+        private LinkedList<char> ConvertStringToLinkedList(string input)
+        {
+            var result = new LinkedList<char>();
+
+            for (int i = 0; i < input.Length; i++)
             {
-                foreach (var c in chars)
-                {
-                    result.Add(c);
-                }
+                result.AddLast(input[i]);
             }
 
+            result.AddLast(' ');
             return result;
         }
+
+        private string ConvertLinkedListToString(LinkedList<char> list)
+        {
+            var sb = new StringBuilder();
+
+            var head = list.First;
+
+            while (head != null)
+            {
+                sb.Append(head.Value);
+            }
+            sb.Remove(sb.Length - 1, 1);
+            return sb.ToString();
+        }
+
     }
 }
